@@ -1,0 +1,156 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\bruno\OneDrive\Desktop\SD\projeto1\simulation\modelsim
+vconc
+Ik:cdD=jc?d296iGlnF8kz3
+V[YiYW;9c^i3zdDcX[ZTn<3
+Z1 dC:\Users\bruno\OneDrive\Desktop\SD\projeto1\simulation\modelsim
+w1570987068
+8C:/Users/bruno/OneDrive/Desktop/SD/projeto1/conc.v
+FC:/Users/bruno/OneDrive/Desktop/SD/projeto1/conc.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/bruno/OneDrive/Desktop/SD/projeto1 -O0
+!i10b 1
+!s100 aSzloW9M9hM]0hNDCmY0I3
+!s85 0
+!s108 1571096118.637000
+!s107 C:/Users/bruno/OneDrive/Desktop/SD/projeto1/conc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bruno/OneDrive/Desktop/SD/projeto1|C:/Users/bruno/OneDrive/Desktop/SD/projeto1/conc.v|
+!s101 -O0
+vjanela
+ICZ3ZD<J<8C<jNFfH@YcA`0
+ViMfE][KGgQEliU1A9Jo6P3
+R1
+w1571091033
+8C:/Users/bruno/OneDrive/Desktop/SD/projeto1/janela.v
+FC:/Users/bruno/OneDrive/Desktop/SD/projeto1/janela.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 PAjIPJZH0zY1;o1^69[R92
+!s85 0
+!s108 1571096118.915000
+!s107 C:/Users/bruno/OneDrive/Desktop/SD/projeto1/janela.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bruno/OneDrive/Desktop/SD/projeto1|C:/Users/bruno/OneDrive/Desktop/SD/projeto1/janela.v|
+!s101 -O0
+Erom_1
+Z5 w1570976972
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R1
+Z8 8C:/Users/bruno/OneDrive/Desktop/SD/projeto1/rom_1.vhd
+Z9 FC:/Users/bruno/OneDrive/Desktop/SD/projeto1/rom_1.vhd
+l0
+L42
+VL6X]8[_k0Zlna5i]HS29N2
+Z10 OV;C;10.1d;51
+31
+Z11 !s108 1571096119.060000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/bruno/OneDrive/Desktop/SD/projeto1/rom_1.vhd|
+Z13 !s107 C:/Users/bruno/OneDrive/Desktop/SD/projeto1/rom_1.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 CI6d=W3OClTn9P7PO<gZi3
+!i10b 1
+Asyn
+R6
+R7
+DEx4 work 5 rom_1 0 22 L6X]8[_k0Zlna5i]HS29N2
+l81
+L52
+VTDgRzZzVL7dKzg=FWP19g2
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 ab?o;O`_X<dcldcR1J7G33
+!i10b 1
+Evga_sync
+Z16 w1570976834
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z18 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R6
+R7
+R1
+Z19 8C:/Users/bruno/OneDrive/Desktop/SD/projeto1/vga_sync.vhd
+Z20 FC:/Users/bruno/OneDrive/Desktop/SD/projeto1/vga_sync.vhd
+l0
+L7
+VHjP;7<1hO31_>jhTGJhXJ1
+R10
+31
+Z21 !s108 1571096119.251000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/bruno/OneDrive/Desktop/SD/projeto1/vga_sync.vhd|
+Z23 !s107 C:/Users/bruno/OneDrive/Desktop/SD/projeto1/vga_sync.vhd|
+R14
+R15
+!s100 ed4hMmcWF6:Q9TJ8V4Y;A3
+!i10b 1
+Aa
+R17
+R18
+R6
+R7
+DEx4 work 8 vga_sync 0 22 HjP;7<1hO31_>jhTGJhXJ1
+l41
+L13
+VgcOlM;:<<:=@nBgXoH6[c3
+R10
+31
+R21
+R22
+R23
+R14
+R15
+!s100 FCEzzFN>E49MflRJHQO^W1
+!i10b 1
+Evideo_pll
+Z24 w1570983900
+Z25 DPx9 altera_mf 20 altera_mf_components 0 22 dN>@>Mze:JEj3f_7zNO2S2
+R6
+R7
+R1
+Z26 8C:/Users/bruno/OneDrive/Desktop/SD/projeto1/video_pll.vhd
+Z27 FC:/Users/bruno/OneDrive/Desktop/SD/projeto1/video_pll.vhd
+l0
+L39
+V`dRfP]0OzfA4mCD0`6<zg1
+!s100 z`X0BYW`>BzUloWI0XLlm1
+R10
+31
+!i10b 1
+Z28 !s108 1571096119.456000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/bruno/OneDrive/Desktop/SD/projeto1/video_pll.vhd|
+Z30 !s107 C:/Users/bruno/OneDrive/Desktop/SD/projeto1/video_pll.vhd|
+R14
+R15
+Asyn
+R25
+R6
+R7
+DEx4 work 9 video_pll 0 22 `dRfP]0OzfA4mCD0`6<zg1
+l78
+L48
+Vh90=IkIom@9gZU?ef3lV91
+!s100 b`4OUOFDSWHXg``P<?@QT2
+R10
+31
+!i10b 1
+R28
+R29
+R30
+R14
+R15

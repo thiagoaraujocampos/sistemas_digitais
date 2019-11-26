@@ -1,0 +1,49 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do proj1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/bruno/OneDrive/Desktop/SD/projeto1 {C:/Users/bruno/OneDrive/Desktop/SD/projeto1/conc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module conc
+# 
+# Top level modules:
+# 	conc
+# vlog -vlog01compat -work work +incdir+C:/Users/bruno/OneDrive/Desktop/SD/projeto1 {C:/Users/bruno/OneDrive/Desktop/SD/projeto1/janela.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module janela
+# 
+# Top level modules:
+# 	janela
+# vcom -93 -work work {C:/Users/bruno/OneDrive/Desktop/SD/projeto1/rom_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rom_1
+# -- Compiling architecture SYN of rom_1
+# vcom -93 -work work {C:/Users/bruno/OneDrive/Desktop/SD/projeto1/vga_sync.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity VGA_SYNC
+# -- Compiling architecture a of VGA_SYNC
+# vcom -93 -work work {C:/Users/bruno/OneDrive/Desktop/SD/projeto1/video_pll.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity video_PLL
+# -- Compiling architecture SYN of video_pll
+# 

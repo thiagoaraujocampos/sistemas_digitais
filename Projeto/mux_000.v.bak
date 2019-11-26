@@ -1,0 +1,9 @@
+module mux_000 (a, sel, saida);
+	input a;
+	input [2:0] sel;
+	output reg saida;
+	
+	always @ (sel)
+		if(sel == 3'b000)
+			saida = a;
+endmodule
