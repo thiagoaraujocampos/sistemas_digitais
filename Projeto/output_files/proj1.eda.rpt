@@ -1,5 +1,5 @@
 EDA Netlist Writer report for proj1
-Thu Oct 31 22:39:30 2019
+Fri Nov 08 10:12:10 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 31 22:39:30 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 08 10:12:10 2019 ;
 ; Revision Name             ; proj1                                 ;
 ; Top-level Entity Name     ; proj1                                 ;
 ; Family                    ; Cyclone II                            ;
@@ -82,13 +82,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II EDA Netlist Writer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Oct 31 22:39:29 2019
+    Info: Processing started: Fri Nov 08 10:12:08 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off proj1 -c proj1
 Info: Generated files "proj1.vo" and "proj1_v.sdo" in directory "C:/Users/Thiago/Desktop/Temp/projeto1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 214 megabytes
-    Info: Processing ended: Thu Oct 31 22:39:30 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 223 megabytes
+    Info: Processing ended: Fri Nov 08 10:12:10 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 

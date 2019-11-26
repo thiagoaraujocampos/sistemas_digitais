@@ -1,2 +1,4 @@
-Info (10281): Verilog HDL Declaration information at state_machine.v(5): object "y" differs only in case from object "Y" in the same scope
-Info (10281): Verilog HDL Declaration information at state_machine.v(2): object "a" differs only in case from object "A" in the same scope
+Info (10281): Verilog HDL Declaration information at state_machine.v(6): object "y" differs only in case from object "Y" in the same scope
+Info (10281): Verilog HDL Declaration information at state_machine.v(3): object "a" differs only in case from object "A" in the same scope
+Info (10281): Verilog HDL Declaration information at state_machine.v(3): object "b" differs only in case from object "B" in the same scope
+Info (10281): Verilog HDL Declaration information at state_machine.v(5): object "c" differs only in case from object "C" in the same scope

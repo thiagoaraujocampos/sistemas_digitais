@@ -372,4 +372,9 @@ set_global_assignment -name VERILOG_FILE mux_010.v
 set_global_assignment -name VERILOG_FILE mux_011.v
 set_global_assignment -name BDF_FILE processamento.bdf
 set_global_assignment -name VERILOG_FILE ledizinhos.v
+set_global_assignment -name VERILOG_FILE sub.v
+set_global_assignment -name BDF_FILE sub.bdf
+set_global_assignment -name VERILOG_FILE subtrator.v
+set_global_assignment -name VERILOG_FILE modulo_xor.v
+set_global_assignment -name VERILOG_FILE mod_xor.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

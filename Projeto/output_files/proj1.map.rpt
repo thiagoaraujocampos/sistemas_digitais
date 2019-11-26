@@ -1,5 +1,5 @@
 Analysis & Synthesis report for proj1
-Thu Oct 31 22:39:15 2019
+Fri Nov 08 10:11:48 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -14,21 +14,20 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. State Machine - |proj1|processamento:inst24|state_machine:inst|y
- 10. State Machine - |proj1|processamento:inst24|state_machine:inst|Y
- 11. User-Specified and Inferred Latches
- 12. Registers Removed During Synthesis
- 13. General Register Statistics
- 14. Source assignments for processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component|altsyncram_a171:auto_generated
- 15. Source assignments for rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated
- 16. Parameter Settings for User Entity Instance: VGA_SYNC:inst2|video_PLL:video_PLL_inst|altpll:altpll_component
- 17. Parameter Settings for User Entity Instance: processamento:inst24|state_machine:inst
- 18. Parameter Settings for User Entity Instance: processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: rom_1:inst|altsyncram:altsyncram_component
- 20. altpll Parameter Settings by Entity Instance
- 21. altsyncram Parameter Settings by Entity Instance
- 22. Analysis & Synthesis Messages
- 23. Analysis & Synthesis Suppressed Messages
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Source assignments for rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated
+ 13. Source assignments for processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated|altsyncram_6i81:altsyncram2
+ 14. Parameter Settings for User Entity Instance: VGA_SYNC:inst2|video_PLL:video_PLL_inst|altpll:altpll_component
+ 15. Parameter Settings for User Entity Instance: processamento:inst24|state_machine:inst
+ 16. Parameter Settings for User Entity Instance: rom_1:inst|altsyncram:altsyncram_component
+ 17. Parameter Settings for Inferred Entity Instance: processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0
+ 18. altpll Parameter Settings by Entity Instance
+ 19. altsyncram Parameter Settings by Entity Instance
+ 20. altshift_taps Parameter Settings by Entity Instance
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -54,18 +53,18 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 31 22:39:15 2019        ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 08 10:11:48 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; proj1                                        ;
 ; Top-level Entity Name              ; proj1                                        ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 2,177                                        ;
-;     Total combinational functions  ; 2,141                                        ;
-;     Dedicated logic registers      ; 2,121                                        ;
-; Total registers                    ; 2121                                         ;
-; Total pins                         ; 14                                           ;
+; Total logic elements               ; 2,690                                        ;
+;     Total combinational functions  ; 2,661                                        ;
+;     Dedicated logic registers      ; 2,635                                        ;
+; Total registers                    ; 2635                                         ;
+; Total pins                         ; 13                                           ;
 ; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 32,776                                       ;
+; Total memory bits                  ; 33,798                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
 ; Total PLLs                         ; 1                                            ;
 +------------------------------------+----------------------------------------------+
@@ -164,180 +163,668 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------+
-; File Name with User-Entered Path                ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                   ;
-+-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------+
-; rom_1.vhd                                       ; yes             ; User Wizard-Generated File             ; C:/Users/Thiago/Desktop/Temp/projeto1/rom_1.vhd                ;
-; proj1.bdf                                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Thiago/Desktop/Temp/projeto1/proj1.bdf                ;
-; conc.v                                          ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/conc.v                   ;
-; janela.v                                        ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/janela.v                 ;
-; proc.v                                          ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/proc.v                   ;
-; rom_state.v                                     ; yes             ; User Wizard-Generated File             ; C:/Users/Thiago/Desktop/Temp/projeto1/rom_state.v              ;
-; state_machine.v                                 ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/state_machine.v          ;
-; mux_000.v                                       ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/mux_000.v                ;
-; mux_001.v                                       ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/mux_001.v                ;
-; mux_010.v                                       ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/mux_010.v                ;
-; mux_011.v                                       ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/mux_011.v                ;
-; processamento.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Thiago/Desktop/Temp/projeto1/processamento.bdf        ;
-; ledizinhos.v                                    ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/ledizinhos.v             ;
-; vga_sync.vhd                                    ; yes             ; Auto-Found VHDL File                   ; C:/Users/Thiago/Desktop/Temp/projeto1/vga_sync.vhd             ;
-; video_pll.vhd                                   ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/Thiago/Desktop/Temp/projeto1/video_pll.vhd            ;
-; altpll.tdf                                      ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altpll.tdf     ;
-; altsyncram.tdf                                  ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf ;
-; db/altsyncram_a171.tdf                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/altsyncram_a171.tdf   ;
-; instru.mif                                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Thiago/Desktop/Temp/projeto1/instru.mif               ;
-; db/altsyncram_n981.tdf                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/altsyncram_n981.tdf   ;
-; /users/thiago/desktop/temp/matlab proj/sara.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/thiago/desktop/temp/matlab proj/sara.mif                ;
-; db/decode_9oa.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/decode_9oa.tdf        ;
-; db/mux_iib.tdf                                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/mux_iib.tdf           ;
-+-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++-----------------------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------+
+; File Name with User-Entered Path                    ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                      ;
++-----------------------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------+
+; rom_1.vhd                                           ; yes             ; User Wizard-Generated File             ; C:/Users/Thiago/Desktop/Temp/projeto1/rom_1.vhd                   ;
+; proj1.bdf                                           ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Thiago/Desktop/Temp/projeto1/proj1.bdf                   ;
+; conc.v                                              ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/conc.v                      ;
+; janela.v                                            ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/janela.v                    ;
+; proc.v                                              ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/proc.v                      ;
+; state_machine.v                                     ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/state_machine.v             ;
+; processamento.bdf                                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Thiago/Desktop/Temp/projeto1/processamento.bdf           ;
+; sub.bdf                                             ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Thiago/Desktop/Temp/projeto1/sub.bdf                     ;
+; mod_xor.v                                           ; yes             ; User Verilog HDL File                  ; C:/Users/Thiago/Desktop/Temp/projeto1/mod_xor.v                   ;
+; vga_sync.vhd                                        ; yes             ; Auto-Found VHDL File                   ; C:/Users/Thiago/Desktop/Temp/projeto1/vga_sync.vhd                ;
+; video_pll.vhd                                       ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/Thiago/Desktop/Temp/projeto1/video_pll.vhd               ;
+; altpll.tdf                                          ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altpll.tdf        ;
+; altsyncram.tdf                                      ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf    ;
+; db/altsyncram_jn81.tdf                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/altsyncram_jn81.tdf      ;
+; /users/thiago/desktop/temp/matlab proj/estrelas.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/thiago/desktop/temp/matlab proj/estrelas.mif               ;
+; db/decode_9oa.tdf                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/decode_9oa.tdf           ;
+; db/mux_iib.tdf                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/mux_iib.tdf              ;
+; altshift_taps.tdf                                   ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altshift_taps.tdf ;
+; db/shift_taps_n4m.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/shift_taps_n4m.tdf       ;
+; db/altsyncram_6i81.tdf                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/altsyncram_6i81.tdf      ;
+; db/cntr_lqf.tdf                                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/cntr_lqf.tdf             ;
+; db/cmpr_mdc.tdf                                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/Thiago/Desktop/Temp/projeto1/db/cmpr_mdc.tdf             ;
++-----------------------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 2,177  ;
-;                                             ;        ;
-; Total combinational functions               ; 2141   ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 39     ;
-;     -- 3 input functions                    ; 19     ;
-;     -- <=2 input functions                  ; 2083   ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 2123   ;
-;     -- arithmetic mode                      ; 18     ;
-;                                             ;        ;
-; Total registers                             ; 2121   ;
-;     -- Dedicated logic registers            ; 2121   ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 14     ;
-; Total memory bits                           ; 32776  ;
-; Total PLLs                                  ; 1      ;
-; Maximum fan-out node                        ; KEY[0] ;
-; Maximum fan-out                             ; 2066   ;
-; Total fan-out                               ; 8784   ;
-; Average fan-out                             ; 2.05   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 2,690 ;
+;                                             ;       ;
+; Total combinational functions               ; 2661  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 40    ;
+;     -- 3 input functions                    ; 18    ;
+;     -- <=2 input functions                  ; 2603  ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 2632  ;
+;     -- arithmetic mode                      ; 29    ;
+;                                             ;       ;
+; Total registers                             ; 2635  ;
+;     -- Dedicated logic registers            ; 2635  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 13    ;
+; Total memory bits                           ; 33798 ;
+; Total PLLs                                  ; 1     ;
+; Maximum fan-out node                        ; inst3 ;
+; Maximum fan-out                             ; 2596  ;
+; Total fan-out                               ; 10869 ;
+; Average fan-out                             ; 2.04  ;
++---------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
-; |proj1                                       ; 2141 (1)          ; 2121 (0)     ; 32776       ; 0            ; 0       ; 0         ; 14   ; 0            ; |proj1                                                                                                     ; work         ;
-;    |VGA_SYNC:inst2|                          ; 52 (52)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|VGA_SYNC:inst2                                                                                      ;              ;
-;       |video_PLL:video_PLL_inst|             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|VGA_SYNC:inst2|video_PLL:video_PLL_inst                                                             ;              ;
-;          |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|VGA_SYNC:inst2|video_PLL:video_PLL_inst|altpll:altpll_component                                     ;              ;
-;    |processamento:inst24|                    ; 2075 (1)          ; 2067 (0)     ; 8           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24                                                                                ;              ;
-;       |ledizinhos:inst1|                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|ledizinhos:inst1                                                               ;              ;
-;       |mux_000:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|mux_000:inst4                                                                  ;              ;
-;       |mux_001:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|mux_001:inst5                                                                  ;              ;
-;       |mux_010:inst8|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|mux_010:inst8                                                                  ;              ;
-;       |mux_011:inst9|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|mux_011:inst9                                                                  ;              ;
-;       |proc:inst17|                          ; 516 (516)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17                                                                    ;              ;
-;       |proc:inst18|                          ; 515 (515)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst18                                                                    ;              ;
-;       |proc:inst19|                          ; 515 (515)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst19                                                                    ;              ;
-;       |proc:inst20|                          ; 513 (513)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst20                                                                    ;              ;
-;       |rom_state:inst6|                      ; 0 (0)             ; 0 (0)        ; 8           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|rom_state:inst6                                                                ;              ;
-;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component                                ;              ;
-;             |altsyncram_a171:auto_generated| ; 0 (0)             ; 0 (0)        ; 8           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component|altsyncram_a171:auto_generated ;              ;
-;       |state_machine:inst|                   ; 6 (6)             ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|state_machine:inst                                                             ;              ;
-;    |rom_1:inst|                              ; 13 (0)            ; 6 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst                                                                                          ;              ;
-;       |altsyncram:altsyncram_component|      ; 13 (0)            ; 6 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component                                                          ;              ;
-;          |altsyncram_n981:auto_generated|    ; 13 (0)            ; 6 (6)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated                           ;              ;
-;             |decode_9oa:deep_decode|         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated|decode_9oa:deep_decode    ;              ;
-;             |mux_iib:mux2|                   ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated|mux_iib:mux2              ;              ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                       ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                             ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |proj1                                       ; 2661 (9)          ; 2635 (0)     ; 33798       ; 0            ; 0       ; 0         ; 13   ; 0            ; |proj1                                                                                                                          ; work         ;
+;    |VGA_SYNC:inst2|                          ; 46 (46)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|VGA_SYNC:inst2                                                                                                           ;              ;
+;       |video_PLL:video_PLL_inst|             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|VGA_SYNC:inst2|video_PLL:video_PLL_inst                                                                                  ;              ;
+;          |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|VGA_SYNC:inst2|video_PLL:video_PLL_inst|altpll:altpll_component                                                          ;              ;
+;    |processamento:inst24|                    ; 2080 (0)          ; 2067 (0)     ; 1030        ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24                                                                                                     ;              ;
+;       |proc:inst17|                          ; 532 (516)         ; 525 (514)    ; 1030        ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17                                                                                         ;              ;
+;          |altshift_taps:lbypass_rtl_0|       ; 16 (0)            ; 11 (0)       ; 1030        ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0                                                             ;              ;
+;             |shift_taps_n4m:auto_generated|  ; 16 (0)            ; 11 (0)       ; 1030        ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated                               ;              ;
+;                |altsyncram_6i81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 1030        ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated|altsyncram_6i81:altsyncram2   ;              ;
+;                |cntr_lqf:cntr1|              ; 16 (13)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated|cntr_lqf:cntr1                ;              ;
+;                   |cmpr_mdc:cmpr5|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated|cntr_lqf:cntr1|cmpr_mdc:cmpr5 ;              ;
+;       |proc:inst18|                          ; 515 (515)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst18                                                                                         ;              ;
+;       |proc:inst19|                          ; 515 (515)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst19                                                                                         ;              ;
+;       |proc:inst20|                          ; 515 (515)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|proc:inst20                                                                                         ;              ;
+;       |state_machine:inst|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|processamento:inst24|state_machine:inst                                                                                  ;              ;
+;    |rom_1:inst|                              ; 12 (0)            ; 6 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst                                                                                                               ;              ;
+;       |altsyncram:altsyncram_component|      ; 12 (0)            ; 6 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component                                                                               ;              ;
+;          |altsyncram_jn81:auto_generated|    ; 12 (0)            ; 6 (6)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated                                                ;              ;
+;             |decode_9oa:deep_decode|         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated|decode_9oa:deep_decode                         ;              ;
+;             |mux_iib:mux2|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated|mux_iib:mux2                                   ;              ;
+;    |sub:inst6|                               ; 514 (0)           ; 514 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|sub:inst6                                                                                                                ;              ;
+;       |proc:inst1|                           ; 514 (514)         ; 514 (514)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |proj1|sub:inst6|proc:inst1                                                                                                     ;              ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                           ;
-+----------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------------------+
-; Name                                                                                                           ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                     ;
-+----------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------------------+
-; processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component|altsyncram_a171:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 8            ; 1            ; --           ; --           ; 8     ; instru.mif              ;
-; rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM  ; 32768        ; 1            ; --           ; --           ; 32768 ; ../matlab proj/sara.mif ;
-+----------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                              ;
++-----------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------+
+; Name                                                                                                                              ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                         ;
++-----------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------+
+; processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated|altsyncram_6i81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1030         ; 1            ; 1030         ; 1            ; 1030  ; None                        ;
+; rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated|ALTSYNCRAM                                              ; AUTO ; ROM              ; 32768        ; 1            ; --           ; --           ; 32768 ; ../matlab proj/estrelas.mif ;
++-----------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------+
 
 
-Encoding Type:  One-Hot
-+------------------------------------------------------------------+
-; State Machine - |proj1|processamento:inst24|state_machine:inst|y ;
-+------+-----+-----+-----+-----+-----------------------------------+
-; Name ; y.D ; y.C ; y.B ; y.A ; y.E                               ;
-+------+-----+-----+-----+-----+-----------------------------------+
-; y.A  ; 0   ; 0   ; 0   ; 0   ; 0                                 ;
-; y.B  ; 0   ; 0   ; 1   ; 1   ; 0                                 ;
-; y.C  ; 0   ; 1   ; 0   ; 1   ; 0                                 ;
-; y.D  ; 1   ; 0   ; 0   ; 1   ; 0                                 ;
-; y.E  ; 0   ; 0   ; 0   ; 1   ; 1                                 ;
-+------+-----+-----+-----+-----+-----------------------------------+
-
-
-Encoding Type:  One-Hot
-+------------------------------------------------------------------+
-; State Machine - |proj1|processamento:inst24|state_machine:inst|Y ;
-+------+-----+-----+-----+-----+-----------------------------------+
-; Name ; Y.D ; Y.C ; Y.B ; Y.A ; Y.E                               ;
-+------+-----+-----+-----+-----+-----------------------------------+
-; Y.A  ; 0   ; 0   ; 0   ; 0   ; 0                                 ;
-; Y.B  ; 0   ; 0   ; 1   ; 1   ; 0                                 ;
-; Y.C  ; 0   ; 1   ; 0   ; 1   ; 0                                 ;
-; Y.D  ; 1   ; 0   ; 0   ; 1   ; 0                                 ;
-; Y.E  ; 0   ; 0   ; 0   ; 1   ; 1                                 ;
-+------+-----+-----+-----+-----+-----------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                        ;
-+----------------------------------------------------+----------------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                          ; Free of Timing Hazards ;
-+----------------------------------------------------+----------------------------------------------+------------------------+
-; processamento:inst24|mux_011:inst9|saida           ; processamento:inst24|ledizinhos:inst1|Equal0 ; yes                    ;
-; processamento:inst24|mux_010:inst8|saida           ; processamento:inst24|ledizinhos:inst1|Equal0 ; yes                    ;
-; processamento:inst24|mux_001:inst5|saida           ; processamento:inst24|ledizinhos:inst1|Equal0 ; yes                    ;
-; processamento:inst24|mux_000:inst4|saida           ; processamento:inst24|ledizinhos:inst1|Equal0 ; yes                    ;
-; Number of user-specified and inferred latches = 4  ;                                              ;                        ;
-+----------------------------------------------------+----------------------------------------------+------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                            ;
++----------------------------------------------------+--------------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                              ; Free of Timing Hazards ;
++----------------------------------------------------+--------------------------------------------------+------------------------+
+; processamento:inst24|state_machine:inst|q3         ; processamento:inst24|state_machine:inst|Decoder0 ; yes                    ;
+; processamento:inst24|state_machine:inst|q2         ; processamento:inst24|state_machine:inst|Decoder0 ; yes                    ;
+; processamento:inst24|state_machine:inst|q1         ; processamento:inst24|state_machine:inst|Decoder0 ; yes                    ;
+; processamento:inst24|state_machine:inst|q0         ; processamento:inst24|state_machine:inst|Decoder0 ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                                                  ;                        ;
++----------------------------------------------------+--------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                              ;
-+---------------------------------------------+---------------------------------------------------+
-; Register name                               ; Reason for Removal                                ;
-+---------------------------------------------+---------------------------------------------------+
-; processamento:inst24|proc:inst17|l1[254]    ; Merged with processamento:inst24|proc:inst17|m[7] ;
-; processamento:inst24|proc:inst17|l2[255]    ; Merged with processamento:inst24|proc:inst17|m[5] ;
-; processamento:inst24|proc:inst17|l2[254]    ; Merged with processamento:inst24|proc:inst17|m[4] ;
-; processamento:inst24|proc:inst17|l2[253]    ; Merged with processamento:inst24|proc:inst17|m[3] ;
-; processamento:inst24|proc:inst18|l1[254]    ; Merged with processamento:inst24|proc:inst18|m[7] ;
-; processamento:inst24|proc:inst18|l2[255]    ; Merged with processamento:inst24|proc:inst18|m[5] ;
-; processamento:inst24|proc:inst18|l2[254]    ; Merged with processamento:inst24|proc:inst18|m[4] ;
-; processamento:inst24|proc:inst18|l2[253]    ; Merged with processamento:inst24|proc:inst18|m[3] ;
-; processamento:inst24|proc:inst19|l1[254]    ; Merged with processamento:inst24|proc:inst19|m[7] ;
-; processamento:inst24|proc:inst19|l2[255]    ; Merged with processamento:inst24|proc:inst19|m[5] ;
-; processamento:inst24|proc:inst19|l2[254]    ; Merged with processamento:inst24|proc:inst19|m[4] ;
-; processamento:inst24|proc:inst19|l2[253]    ; Merged with processamento:inst24|proc:inst19|m[3] ;
-; processamento:inst24|proc:inst20|l1[254]    ; Merged with processamento:inst24|proc:inst20|m[7] ;
-; processamento:inst24|proc:inst20|l2[255]    ; Merged with processamento:inst24|proc:inst20|m[5] ;
-; processamento:inst24|proc:inst20|l2[254]    ; Merged with processamento:inst24|proc:inst20|m[4] ;
-; processamento:inst24|proc:inst20|l2[253]    ; Merged with processamento:inst24|proc:inst20|m[3] ;
-; VGA_SYNC:inst2|pixel_row[9]                 ; Stuck at GND due to stuck port data_in            ;
-; processamento:inst24|state_machine:inst|y~4 ; Lost fanout                                       ;
-; processamento:inst24|state_machine:inst|y~5 ; Lost fanout                                       ;
-; processamento:inst24|state_machine:inst|Y~4 ; Lost fanout                                       ;
-; processamento:inst24|state_machine:inst|Y~5 ; Lost fanout                                       ;
-; Total Number of Removed Registers = 21      ;                                                   ;
-+---------------------------------------------+---------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++------------------------------------------+---------------------------------------------------+
+; Register name                            ; Reason for Removal                                ;
++------------------------------------------+---------------------------------------------------+
+; processamento:inst24|proc:inst17|l1[254] ; Merged with processamento:inst24|proc:inst17|m[7] ;
+; processamento:inst24|proc:inst17|l2[255] ; Merged with processamento:inst24|proc:inst17|m[5] ;
+; processamento:inst24|proc:inst17|l2[254] ; Merged with processamento:inst24|proc:inst17|m[4] ;
+; processamento:inst24|proc:inst17|l2[253] ; Merged with processamento:inst24|proc:inst17|m[3] ;
+; processamento:inst24|proc:inst18|l1[254] ; Merged with processamento:inst24|proc:inst18|m[7] ;
+; processamento:inst24|proc:inst18|l2[255] ; Merged with processamento:inst24|proc:inst18|m[5] ;
+; processamento:inst24|proc:inst18|l2[254] ; Merged with processamento:inst24|proc:inst18|m[4] ;
+; processamento:inst24|proc:inst18|l2[253] ; Merged with processamento:inst24|proc:inst18|m[3] ;
+; processamento:inst24|proc:inst19|l1[254] ; Merged with processamento:inst24|proc:inst19|m[7] ;
+; processamento:inst24|proc:inst19|l2[255] ; Merged with processamento:inst24|proc:inst19|m[5] ;
+; processamento:inst24|proc:inst19|l2[254] ; Merged with processamento:inst24|proc:inst19|m[4] ;
+; processamento:inst24|proc:inst19|l2[253] ; Merged with processamento:inst24|proc:inst19|m[3] ;
+; processamento:inst24|proc:inst20|l1[254] ; Merged with processamento:inst24|proc:inst20|m[7] ;
+; processamento:inst24|proc:inst20|l2[255] ; Merged with processamento:inst24|proc:inst20|m[5] ;
+; processamento:inst24|proc:inst20|l2[254] ; Merged with processamento:inst24|proc:inst20|m[4] ;
+; processamento:inst24|proc:inst20|l2[253] ; Merged with processamento:inst24|proc:inst20|m[3] ;
+; sub:inst6|proc:inst1|l1[254]             ; Merged with sub:inst6|proc:inst1|m[7]             ;
+; sub:inst6|proc:inst1|l2[255]             ; Merged with sub:inst6|proc:inst1|m[5]             ;
+; sub:inst6|proc:inst1|l2[254]             ; Merged with sub:inst6|proc:inst1|m[4]             ;
+; sub:inst6|proc:inst1|l2[253]             ; Merged with sub:inst6|proc:inst1|m[3]             ;
+; sub:inst6|proc:inst|l1[254]              ; Merged with sub:inst6|proc:inst|m[7]              ;
+; sub:inst6|proc:inst|l2[255]              ; Merged with sub:inst6|proc:inst|m[5]              ;
+; sub:inst6|proc:inst|l2[254]              ; Merged with sub:inst6|proc:inst|m[4]              ;
+; sub:inst6|proc:inst|l2[253]              ; Merged with sub:inst6|proc:inst|m[3]              ;
+; sub:inst6|proc:inst|l1[255]              ; Merged with sub:inst6|proc:inst1|l1[255]          ;
+; sub:inst6|proc:inst|m[7]                 ; Merged with sub:inst6|proc:inst1|m[7]             ;
+; sub:inst6|proc:inst|l1[253]              ; Merged with sub:inst6|proc:inst1|l1[253]          ;
+; sub:inst6|proc:inst|l1[252]              ; Merged with sub:inst6|proc:inst1|l1[252]          ;
+; sub:inst6|proc:inst|l1[251]              ; Merged with sub:inst6|proc:inst1|l1[251]          ;
+; sub:inst6|proc:inst|l1[250]              ; Merged with sub:inst6|proc:inst1|l1[250]          ;
+; sub:inst6|proc:inst|l1[249]              ; Merged with sub:inst6|proc:inst1|l1[249]          ;
+; sub:inst6|proc:inst|l1[248]              ; Merged with sub:inst6|proc:inst1|l1[248]          ;
+; sub:inst6|proc:inst|l1[247]              ; Merged with sub:inst6|proc:inst1|l1[247]          ;
+; sub:inst6|proc:inst|l1[246]              ; Merged with sub:inst6|proc:inst1|l1[246]          ;
+; sub:inst6|proc:inst|l1[245]              ; Merged with sub:inst6|proc:inst1|l1[245]          ;
+; sub:inst6|proc:inst|l1[244]              ; Merged with sub:inst6|proc:inst1|l1[244]          ;
+; sub:inst6|proc:inst|l1[243]              ; Merged with sub:inst6|proc:inst1|l1[243]          ;
+; sub:inst6|proc:inst|l1[242]              ; Merged with sub:inst6|proc:inst1|l1[242]          ;
+; sub:inst6|proc:inst|l1[241]              ; Merged with sub:inst6|proc:inst1|l1[241]          ;
+; sub:inst6|proc:inst|l1[240]              ; Merged with sub:inst6|proc:inst1|l1[240]          ;
+; sub:inst6|proc:inst|l1[239]              ; Merged with sub:inst6|proc:inst1|l1[239]          ;
+; sub:inst6|proc:inst|l1[238]              ; Merged with sub:inst6|proc:inst1|l1[238]          ;
+; sub:inst6|proc:inst|l1[237]              ; Merged with sub:inst6|proc:inst1|l1[237]          ;
+; sub:inst6|proc:inst|l1[236]              ; Merged with sub:inst6|proc:inst1|l1[236]          ;
+; sub:inst6|proc:inst|l1[235]              ; Merged with sub:inst6|proc:inst1|l1[235]          ;
+; sub:inst6|proc:inst|l1[234]              ; Merged with sub:inst6|proc:inst1|l1[234]          ;
+; sub:inst6|proc:inst|l1[233]              ; Merged with sub:inst6|proc:inst1|l1[233]          ;
+; sub:inst6|proc:inst|l1[232]              ; Merged with sub:inst6|proc:inst1|l1[232]          ;
+; sub:inst6|proc:inst|l1[231]              ; Merged with sub:inst6|proc:inst1|l1[231]          ;
+; sub:inst6|proc:inst|l1[230]              ; Merged with sub:inst6|proc:inst1|l1[230]          ;
+; sub:inst6|proc:inst|l1[229]              ; Merged with sub:inst6|proc:inst1|l1[229]          ;
+; sub:inst6|proc:inst|l1[228]              ; Merged with sub:inst6|proc:inst1|l1[228]          ;
+; sub:inst6|proc:inst|l1[227]              ; Merged with sub:inst6|proc:inst1|l1[227]          ;
+; sub:inst6|proc:inst|l1[226]              ; Merged with sub:inst6|proc:inst1|l1[226]          ;
+; sub:inst6|proc:inst|l1[225]              ; Merged with sub:inst6|proc:inst1|l1[225]          ;
+; sub:inst6|proc:inst|l1[224]              ; Merged with sub:inst6|proc:inst1|l1[224]          ;
+; sub:inst6|proc:inst|l1[223]              ; Merged with sub:inst6|proc:inst1|l1[223]          ;
+; sub:inst6|proc:inst|l1[222]              ; Merged with sub:inst6|proc:inst1|l1[222]          ;
+; sub:inst6|proc:inst|l1[221]              ; Merged with sub:inst6|proc:inst1|l1[221]          ;
+; sub:inst6|proc:inst|l1[220]              ; Merged with sub:inst6|proc:inst1|l1[220]          ;
+; sub:inst6|proc:inst|l1[219]              ; Merged with sub:inst6|proc:inst1|l1[219]          ;
+; sub:inst6|proc:inst|l1[218]              ; Merged with sub:inst6|proc:inst1|l1[218]          ;
+; sub:inst6|proc:inst|l1[217]              ; Merged with sub:inst6|proc:inst1|l1[217]          ;
+; sub:inst6|proc:inst|l1[216]              ; Merged with sub:inst6|proc:inst1|l1[216]          ;
+; sub:inst6|proc:inst|l1[215]              ; Merged with sub:inst6|proc:inst1|l1[215]          ;
+; sub:inst6|proc:inst|l1[214]              ; Merged with sub:inst6|proc:inst1|l1[214]          ;
+; sub:inst6|proc:inst|l1[213]              ; Merged with sub:inst6|proc:inst1|l1[213]          ;
+; sub:inst6|proc:inst|l1[212]              ; Merged with sub:inst6|proc:inst1|l1[212]          ;
+; sub:inst6|proc:inst|l1[211]              ; Merged with sub:inst6|proc:inst1|l1[211]          ;
+; sub:inst6|proc:inst|l1[210]              ; Merged with sub:inst6|proc:inst1|l1[210]          ;
+; sub:inst6|proc:inst|l1[209]              ; Merged with sub:inst6|proc:inst1|l1[209]          ;
+; sub:inst6|proc:inst|l1[208]              ; Merged with sub:inst6|proc:inst1|l1[208]          ;
+; sub:inst6|proc:inst|l1[207]              ; Merged with sub:inst6|proc:inst1|l1[207]          ;
+; sub:inst6|proc:inst|l1[206]              ; Merged with sub:inst6|proc:inst1|l1[206]          ;
+; sub:inst6|proc:inst|l1[205]              ; Merged with sub:inst6|proc:inst1|l1[205]          ;
+; sub:inst6|proc:inst|l1[204]              ; Merged with sub:inst6|proc:inst1|l1[204]          ;
+; sub:inst6|proc:inst|l1[203]              ; Merged with sub:inst6|proc:inst1|l1[203]          ;
+; sub:inst6|proc:inst|l1[202]              ; Merged with sub:inst6|proc:inst1|l1[202]          ;
+; sub:inst6|proc:inst|l1[201]              ; Merged with sub:inst6|proc:inst1|l1[201]          ;
+; sub:inst6|proc:inst|l1[200]              ; Merged with sub:inst6|proc:inst1|l1[200]          ;
+; sub:inst6|proc:inst|l1[199]              ; Merged with sub:inst6|proc:inst1|l1[199]          ;
+; sub:inst6|proc:inst|l1[198]              ; Merged with sub:inst6|proc:inst1|l1[198]          ;
+; sub:inst6|proc:inst|l1[197]              ; Merged with sub:inst6|proc:inst1|l1[197]          ;
+; sub:inst6|proc:inst|l1[196]              ; Merged with sub:inst6|proc:inst1|l1[196]          ;
+; sub:inst6|proc:inst|l1[195]              ; Merged with sub:inst6|proc:inst1|l1[195]          ;
+; sub:inst6|proc:inst|l1[194]              ; Merged with sub:inst6|proc:inst1|l1[194]          ;
+; sub:inst6|proc:inst|l1[193]              ; Merged with sub:inst6|proc:inst1|l1[193]          ;
+; sub:inst6|proc:inst|l1[192]              ; Merged with sub:inst6|proc:inst1|l1[192]          ;
+; sub:inst6|proc:inst|l1[191]              ; Merged with sub:inst6|proc:inst1|l1[191]          ;
+; sub:inst6|proc:inst|l1[190]              ; Merged with sub:inst6|proc:inst1|l1[190]          ;
+; sub:inst6|proc:inst|l1[189]              ; Merged with sub:inst6|proc:inst1|l1[189]          ;
+; sub:inst6|proc:inst|l1[188]              ; Merged with sub:inst6|proc:inst1|l1[188]          ;
+; sub:inst6|proc:inst|l1[187]              ; Merged with sub:inst6|proc:inst1|l1[187]          ;
+; sub:inst6|proc:inst|l1[186]              ; Merged with sub:inst6|proc:inst1|l1[186]          ;
+; sub:inst6|proc:inst|l1[185]              ; Merged with sub:inst6|proc:inst1|l1[185]          ;
+; sub:inst6|proc:inst|l1[184]              ; Merged with sub:inst6|proc:inst1|l1[184]          ;
+; sub:inst6|proc:inst|l1[183]              ; Merged with sub:inst6|proc:inst1|l1[183]          ;
+; sub:inst6|proc:inst|l1[182]              ; Merged with sub:inst6|proc:inst1|l1[182]          ;
+; sub:inst6|proc:inst|l1[181]              ; Merged with sub:inst6|proc:inst1|l1[181]          ;
+; sub:inst6|proc:inst|l1[180]              ; Merged with sub:inst6|proc:inst1|l1[180]          ;
+; sub:inst6|proc:inst|l1[179]              ; Merged with sub:inst6|proc:inst1|l1[179]          ;
+; sub:inst6|proc:inst|l1[178]              ; Merged with sub:inst6|proc:inst1|l1[178]          ;
+; sub:inst6|proc:inst|l1[177]              ; Merged with sub:inst6|proc:inst1|l1[177]          ;
+; sub:inst6|proc:inst|l1[176]              ; Merged with sub:inst6|proc:inst1|l1[176]          ;
+; sub:inst6|proc:inst|l1[175]              ; Merged with sub:inst6|proc:inst1|l1[175]          ;
+; sub:inst6|proc:inst|l1[174]              ; Merged with sub:inst6|proc:inst1|l1[174]          ;
+; sub:inst6|proc:inst|l1[173]              ; Merged with sub:inst6|proc:inst1|l1[173]          ;
+; sub:inst6|proc:inst|l1[172]              ; Merged with sub:inst6|proc:inst1|l1[172]          ;
+; sub:inst6|proc:inst|l1[171]              ; Merged with sub:inst6|proc:inst1|l1[171]          ;
+; sub:inst6|proc:inst|l1[170]              ; Merged with sub:inst6|proc:inst1|l1[170]          ;
+; sub:inst6|proc:inst|l1[169]              ; Merged with sub:inst6|proc:inst1|l1[169]          ;
+; sub:inst6|proc:inst|l1[168]              ; Merged with sub:inst6|proc:inst1|l1[168]          ;
+; sub:inst6|proc:inst|l1[167]              ; Merged with sub:inst6|proc:inst1|l1[167]          ;
+; sub:inst6|proc:inst|l1[166]              ; Merged with sub:inst6|proc:inst1|l1[166]          ;
+; sub:inst6|proc:inst|l1[165]              ; Merged with sub:inst6|proc:inst1|l1[165]          ;
+; sub:inst6|proc:inst|l1[164]              ; Merged with sub:inst6|proc:inst1|l1[164]          ;
+; sub:inst6|proc:inst|l1[163]              ; Merged with sub:inst6|proc:inst1|l1[163]          ;
+; sub:inst6|proc:inst|l1[162]              ; Merged with sub:inst6|proc:inst1|l1[162]          ;
+; sub:inst6|proc:inst|l1[161]              ; Merged with sub:inst6|proc:inst1|l1[161]          ;
+; sub:inst6|proc:inst|l1[160]              ; Merged with sub:inst6|proc:inst1|l1[160]          ;
+; sub:inst6|proc:inst|l1[159]              ; Merged with sub:inst6|proc:inst1|l1[159]          ;
+; sub:inst6|proc:inst|l1[158]              ; Merged with sub:inst6|proc:inst1|l1[158]          ;
+; sub:inst6|proc:inst|l1[157]              ; Merged with sub:inst6|proc:inst1|l1[157]          ;
+; sub:inst6|proc:inst|l1[156]              ; Merged with sub:inst6|proc:inst1|l1[156]          ;
+; sub:inst6|proc:inst|l1[155]              ; Merged with sub:inst6|proc:inst1|l1[155]          ;
+; sub:inst6|proc:inst|l1[154]              ; Merged with sub:inst6|proc:inst1|l1[154]          ;
+; sub:inst6|proc:inst|l1[153]              ; Merged with sub:inst6|proc:inst1|l1[153]          ;
+; sub:inst6|proc:inst|l1[152]              ; Merged with sub:inst6|proc:inst1|l1[152]          ;
+; sub:inst6|proc:inst|l1[151]              ; Merged with sub:inst6|proc:inst1|l1[151]          ;
+; sub:inst6|proc:inst|l1[150]              ; Merged with sub:inst6|proc:inst1|l1[150]          ;
+; sub:inst6|proc:inst|l1[149]              ; Merged with sub:inst6|proc:inst1|l1[149]          ;
+; sub:inst6|proc:inst|l1[148]              ; Merged with sub:inst6|proc:inst1|l1[148]          ;
+; sub:inst6|proc:inst|l1[147]              ; Merged with sub:inst6|proc:inst1|l1[147]          ;
+; sub:inst6|proc:inst|l1[146]              ; Merged with sub:inst6|proc:inst1|l1[146]          ;
+; sub:inst6|proc:inst|l1[145]              ; Merged with sub:inst6|proc:inst1|l1[145]          ;
+; sub:inst6|proc:inst|l1[144]              ; Merged with sub:inst6|proc:inst1|l1[144]          ;
+; sub:inst6|proc:inst|l1[143]              ; Merged with sub:inst6|proc:inst1|l1[143]          ;
+; sub:inst6|proc:inst|l1[142]              ; Merged with sub:inst6|proc:inst1|l1[142]          ;
+; sub:inst6|proc:inst|l1[141]              ; Merged with sub:inst6|proc:inst1|l1[141]          ;
+; sub:inst6|proc:inst|l1[140]              ; Merged with sub:inst6|proc:inst1|l1[140]          ;
+; sub:inst6|proc:inst|l1[139]              ; Merged with sub:inst6|proc:inst1|l1[139]          ;
+; sub:inst6|proc:inst|l1[138]              ; Merged with sub:inst6|proc:inst1|l1[138]          ;
+; sub:inst6|proc:inst|l1[137]              ; Merged with sub:inst6|proc:inst1|l1[137]          ;
+; sub:inst6|proc:inst|l1[136]              ; Merged with sub:inst6|proc:inst1|l1[136]          ;
+; sub:inst6|proc:inst|l1[135]              ; Merged with sub:inst6|proc:inst1|l1[135]          ;
+; sub:inst6|proc:inst|l1[134]              ; Merged with sub:inst6|proc:inst1|l1[134]          ;
+; sub:inst6|proc:inst|l1[133]              ; Merged with sub:inst6|proc:inst1|l1[133]          ;
+; sub:inst6|proc:inst|l1[132]              ; Merged with sub:inst6|proc:inst1|l1[132]          ;
+; sub:inst6|proc:inst|l1[131]              ; Merged with sub:inst6|proc:inst1|l1[131]          ;
+; sub:inst6|proc:inst|l1[130]              ; Merged with sub:inst6|proc:inst1|l1[130]          ;
+; sub:inst6|proc:inst|l1[129]              ; Merged with sub:inst6|proc:inst1|l1[129]          ;
+; sub:inst6|proc:inst|l1[128]              ; Merged with sub:inst6|proc:inst1|l1[128]          ;
+; sub:inst6|proc:inst|l1[127]              ; Merged with sub:inst6|proc:inst1|l1[127]          ;
+; sub:inst6|proc:inst|l1[126]              ; Merged with sub:inst6|proc:inst1|l1[126]          ;
+; sub:inst6|proc:inst|l1[125]              ; Merged with sub:inst6|proc:inst1|l1[125]          ;
+; sub:inst6|proc:inst|l1[124]              ; Merged with sub:inst6|proc:inst1|l1[124]          ;
+; sub:inst6|proc:inst|l1[123]              ; Merged with sub:inst6|proc:inst1|l1[123]          ;
+; sub:inst6|proc:inst|l1[122]              ; Merged with sub:inst6|proc:inst1|l1[122]          ;
+; sub:inst6|proc:inst|l1[121]              ; Merged with sub:inst6|proc:inst1|l1[121]          ;
+; sub:inst6|proc:inst|l1[120]              ; Merged with sub:inst6|proc:inst1|l1[120]          ;
+; sub:inst6|proc:inst|l1[119]              ; Merged with sub:inst6|proc:inst1|l1[119]          ;
+; sub:inst6|proc:inst|l1[118]              ; Merged with sub:inst6|proc:inst1|l1[118]          ;
+; sub:inst6|proc:inst|l1[117]              ; Merged with sub:inst6|proc:inst1|l1[117]          ;
+; sub:inst6|proc:inst|l1[116]              ; Merged with sub:inst6|proc:inst1|l1[116]          ;
+; sub:inst6|proc:inst|l1[115]              ; Merged with sub:inst6|proc:inst1|l1[115]          ;
+; sub:inst6|proc:inst|l1[114]              ; Merged with sub:inst6|proc:inst1|l1[114]          ;
+; sub:inst6|proc:inst|l1[113]              ; Merged with sub:inst6|proc:inst1|l1[113]          ;
+; sub:inst6|proc:inst|l1[112]              ; Merged with sub:inst6|proc:inst1|l1[112]          ;
+; sub:inst6|proc:inst|l1[111]              ; Merged with sub:inst6|proc:inst1|l1[111]          ;
+; sub:inst6|proc:inst|l1[110]              ; Merged with sub:inst6|proc:inst1|l1[110]          ;
+; sub:inst6|proc:inst|l1[109]              ; Merged with sub:inst6|proc:inst1|l1[109]          ;
+; sub:inst6|proc:inst|l1[108]              ; Merged with sub:inst6|proc:inst1|l1[108]          ;
+; sub:inst6|proc:inst|l1[107]              ; Merged with sub:inst6|proc:inst1|l1[107]          ;
+; sub:inst6|proc:inst|l1[106]              ; Merged with sub:inst6|proc:inst1|l1[106]          ;
+; sub:inst6|proc:inst|l1[105]              ; Merged with sub:inst6|proc:inst1|l1[105]          ;
+; sub:inst6|proc:inst|l1[104]              ; Merged with sub:inst6|proc:inst1|l1[104]          ;
+; sub:inst6|proc:inst|l1[103]              ; Merged with sub:inst6|proc:inst1|l1[103]          ;
+; sub:inst6|proc:inst|l1[102]              ; Merged with sub:inst6|proc:inst1|l1[102]          ;
+; sub:inst6|proc:inst|l1[101]              ; Merged with sub:inst6|proc:inst1|l1[101]          ;
+; sub:inst6|proc:inst|l1[100]              ; Merged with sub:inst6|proc:inst1|l1[100]          ;
+; sub:inst6|proc:inst|l1[99]               ; Merged with sub:inst6|proc:inst1|l1[99]           ;
+; sub:inst6|proc:inst|l1[98]               ; Merged with sub:inst6|proc:inst1|l1[98]           ;
+; sub:inst6|proc:inst|l1[97]               ; Merged with sub:inst6|proc:inst1|l1[97]           ;
+; sub:inst6|proc:inst|l1[96]               ; Merged with sub:inst6|proc:inst1|l1[96]           ;
+; sub:inst6|proc:inst|l1[95]               ; Merged with sub:inst6|proc:inst1|l1[95]           ;
+; sub:inst6|proc:inst|l1[94]               ; Merged with sub:inst6|proc:inst1|l1[94]           ;
+; sub:inst6|proc:inst|l1[93]               ; Merged with sub:inst6|proc:inst1|l1[93]           ;
+; sub:inst6|proc:inst|l1[92]               ; Merged with sub:inst6|proc:inst1|l1[92]           ;
+; sub:inst6|proc:inst|l1[91]               ; Merged with sub:inst6|proc:inst1|l1[91]           ;
+; sub:inst6|proc:inst|l1[90]               ; Merged with sub:inst6|proc:inst1|l1[90]           ;
+; sub:inst6|proc:inst|l1[89]               ; Merged with sub:inst6|proc:inst1|l1[89]           ;
+; sub:inst6|proc:inst|l1[88]               ; Merged with sub:inst6|proc:inst1|l1[88]           ;
+; sub:inst6|proc:inst|l1[87]               ; Merged with sub:inst6|proc:inst1|l1[87]           ;
+; sub:inst6|proc:inst|l1[86]               ; Merged with sub:inst6|proc:inst1|l1[86]           ;
+; sub:inst6|proc:inst|l1[85]               ; Merged with sub:inst6|proc:inst1|l1[85]           ;
+; sub:inst6|proc:inst|l1[84]               ; Merged with sub:inst6|proc:inst1|l1[84]           ;
+; sub:inst6|proc:inst|l1[83]               ; Merged with sub:inst6|proc:inst1|l1[83]           ;
+; sub:inst6|proc:inst|l1[82]               ; Merged with sub:inst6|proc:inst1|l1[82]           ;
+; sub:inst6|proc:inst|l1[81]               ; Merged with sub:inst6|proc:inst1|l1[81]           ;
+; sub:inst6|proc:inst|l1[80]               ; Merged with sub:inst6|proc:inst1|l1[80]           ;
+; sub:inst6|proc:inst|l1[79]               ; Merged with sub:inst6|proc:inst1|l1[79]           ;
+; sub:inst6|proc:inst|l1[78]               ; Merged with sub:inst6|proc:inst1|l1[78]           ;
+; sub:inst6|proc:inst|l1[77]               ; Merged with sub:inst6|proc:inst1|l1[77]           ;
+; sub:inst6|proc:inst|l1[76]               ; Merged with sub:inst6|proc:inst1|l1[76]           ;
+; sub:inst6|proc:inst|l1[75]               ; Merged with sub:inst6|proc:inst1|l1[75]           ;
+; sub:inst6|proc:inst|l1[74]               ; Merged with sub:inst6|proc:inst1|l1[74]           ;
+; sub:inst6|proc:inst|l1[73]               ; Merged with sub:inst6|proc:inst1|l1[73]           ;
+; sub:inst6|proc:inst|l1[72]               ; Merged with sub:inst6|proc:inst1|l1[72]           ;
+; sub:inst6|proc:inst|l1[71]               ; Merged with sub:inst6|proc:inst1|l1[71]           ;
+; sub:inst6|proc:inst|l1[70]               ; Merged with sub:inst6|proc:inst1|l1[70]           ;
+; sub:inst6|proc:inst|l1[69]               ; Merged with sub:inst6|proc:inst1|l1[69]           ;
+; sub:inst6|proc:inst|l1[68]               ; Merged with sub:inst6|proc:inst1|l1[68]           ;
+; sub:inst6|proc:inst|l1[67]               ; Merged with sub:inst6|proc:inst1|l1[67]           ;
+; sub:inst6|proc:inst|l1[66]               ; Merged with sub:inst6|proc:inst1|l1[66]           ;
+; sub:inst6|proc:inst|l1[65]               ; Merged with sub:inst6|proc:inst1|l1[65]           ;
+; sub:inst6|proc:inst|l1[64]               ; Merged with sub:inst6|proc:inst1|l1[64]           ;
+; sub:inst6|proc:inst|l1[63]               ; Merged with sub:inst6|proc:inst1|l1[63]           ;
+; sub:inst6|proc:inst|l1[62]               ; Merged with sub:inst6|proc:inst1|l1[62]           ;
+; sub:inst6|proc:inst|l1[61]               ; Merged with sub:inst6|proc:inst1|l1[61]           ;
+; sub:inst6|proc:inst|l1[60]               ; Merged with sub:inst6|proc:inst1|l1[60]           ;
+; sub:inst6|proc:inst|l1[59]               ; Merged with sub:inst6|proc:inst1|l1[59]           ;
+; sub:inst6|proc:inst|l1[58]               ; Merged with sub:inst6|proc:inst1|l1[58]           ;
+; sub:inst6|proc:inst|l1[57]               ; Merged with sub:inst6|proc:inst1|l1[57]           ;
+; sub:inst6|proc:inst|l1[56]               ; Merged with sub:inst6|proc:inst1|l1[56]           ;
+; sub:inst6|proc:inst|l1[55]               ; Merged with sub:inst6|proc:inst1|l1[55]           ;
+; sub:inst6|proc:inst|l1[54]               ; Merged with sub:inst6|proc:inst1|l1[54]           ;
+; sub:inst6|proc:inst|l1[53]               ; Merged with sub:inst6|proc:inst1|l1[53]           ;
+; sub:inst6|proc:inst|l1[52]               ; Merged with sub:inst6|proc:inst1|l1[52]           ;
+; sub:inst6|proc:inst|l1[51]               ; Merged with sub:inst6|proc:inst1|l1[51]           ;
+; sub:inst6|proc:inst|l1[50]               ; Merged with sub:inst6|proc:inst1|l1[50]           ;
+; sub:inst6|proc:inst|l1[49]               ; Merged with sub:inst6|proc:inst1|l1[49]           ;
+; sub:inst6|proc:inst|l1[48]               ; Merged with sub:inst6|proc:inst1|l1[48]           ;
+; sub:inst6|proc:inst|l1[47]               ; Merged with sub:inst6|proc:inst1|l1[47]           ;
+; sub:inst6|proc:inst|l1[46]               ; Merged with sub:inst6|proc:inst1|l1[46]           ;
+; sub:inst6|proc:inst|l1[45]               ; Merged with sub:inst6|proc:inst1|l1[45]           ;
+; sub:inst6|proc:inst|l1[44]               ; Merged with sub:inst6|proc:inst1|l1[44]           ;
+; sub:inst6|proc:inst|l1[43]               ; Merged with sub:inst6|proc:inst1|l1[43]           ;
+; sub:inst6|proc:inst|l1[42]               ; Merged with sub:inst6|proc:inst1|l1[42]           ;
+; sub:inst6|proc:inst|l1[41]               ; Merged with sub:inst6|proc:inst1|l1[41]           ;
+; sub:inst6|proc:inst|l1[40]               ; Merged with sub:inst6|proc:inst1|l1[40]           ;
+; sub:inst6|proc:inst|l1[39]               ; Merged with sub:inst6|proc:inst1|l1[39]           ;
+; sub:inst6|proc:inst|l1[38]               ; Merged with sub:inst6|proc:inst1|l1[38]           ;
+; sub:inst6|proc:inst|l1[37]               ; Merged with sub:inst6|proc:inst1|l1[37]           ;
+; sub:inst6|proc:inst|l1[36]               ; Merged with sub:inst6|proc:inst1|l1[36]           ;
+; sub:inst6|proc:inst|l1[35]               ; Merged with sub:inst6|proc:inst1|l1[35]           ;
+; sub:inst6|proc:inst|l1[34]               ; Merged with sub:inst6|proc:inst1|l1[34]           ;
+; sub:inst6|proc:inst|l1[33]               ; Merged with sub:inst6|proc:inst1|l1[33]           ;
+; sub:inst6|proc:inst|l1[32]               ; Merged with sub:inst6|proc:inst1|l1[32]           ;
+; sub:inst6|proc:inst|l1[31]               ; Merged with sub:inst6|proc:inst1|l1[31]           ;
+; sub:inst6|proc:inst|l1[30]               ; Merged with sub:inst6|proc:inst1|l1[30]           ;
+; sub:inst6|proc:inst|l1[29]               ; Merged with sub:inst6|proc:inst1|l1[29]           ;
+; sub:inst6|proc:inst|l1[28]               ; Merged with sub:inst6|proc:inst1|l1[28]           ;
+; sub:inst6|proc:inst|l1[27]               ; Merged with sub:inst6|proc:inst1|l1[27]           ;
+; sub:inst6|proc:inst|l1[26]               ; Merged with sub:inst6|proc:inst1|l1[26]           ;
+; sub:inst6|proc:inst|l1[25]               ; Merged with sub:inst6|proc:inst1|l1[25]           ;
+; sub:inst6|proc:inst|l1[24]               ; Merged with sub:inst6|proc:inst1|l1[24]           ;
+; sub:inst6|proc:inst|l1[23]               ; Merged with sub:inst6|proc:inst1|l1[23]           ;
+; sub:inst6|proc:inst|l1[22]               ; Merged with sub:inst6|proc:inst1|l1[22]           ;
+; sub:inst6|proc:inst|l1[21]               ; Merged with sub:inst6|proc:inst1|l1[21]           ;
+; sub:inst6|proc:inst|l1[20]               ; Merged with sub:inst6|proc:inst1|l1[20]           ;
+; sub:inst6|proc:inst|l1[19]               ; Merged with sub:inst6|proc:inst1|l1[19]           ;
+; sub:inst6|proc:inst|l1[18]               ; Merged with sub:inst6|proc:inst1|l1[18]           ;
+; sub:inst6|proc:inst|l1[17]               ; Merged with sub:inst6|proc:inst1|l1[17]           ;
+; sub:inst6|proc:inst|l1[16]               ; Merged with sub:inst6|proc:inst1|l1[16]           ;
+; sub:inst6|proc:inst|l1[15]               ; Merged with sub:inst6|proc:inst1|l1[15]           ;
+; sub:inst6|proc:inst|l1[14]               ; Merged with sub:inst6|proc:inst1|l1[14]           ;
+; sub:inst6|proc:inst|l1[13]               ; Merged with sub:inst6|proc:inst1|l1[13]           ;
+; sub:inst6|proc:inst|l1[12]               ; Merged with sub:inst6|proc:inst1|l1[12]           ;
+; sub:inst6|proc:inst|l1[11]               ; Merged with sub:inst6|proc:inst1|l1[11]           ;
+; sub:inst6|proc:inst|l1[10]               ; Merged with sub:inst6|proc:inst1|l1[10]           ;
+; sub:inst6|proc:inst|l1[9]                ; Merged with sub:inst6|proc:inst1|l1[9]            ;
+; sub:inst6|proc:inst|l1[8]                ; Merged with sub:inst6|proc:inst1|l1[8]            ;
+; sub:inst6|proc:inst|l1[7]                ; Merged with sub:inst6|proc:inst1|l1[7]            ;
+; sub:inst6|proc:inst|l1[6]                ; Merged with sub:inst6|proc:inst1|l1[6]            ;
+; sub:inst6|proc:inst|l1[5]                ; Merged with sub:inst6|proc:inst1|l1[5]            ;
+; sub:inst6|proc:inst|l1[4]                ; Merged with sub:inst6|proc:inst1|l1[4]            ;
+; sub:inst6|proc:inst|l1[3]                ; Merged with sub:inst6|proc:inst1|l1[3]            ;
+; sub:inst6|proc:inst|l1[2]                ; Merged with sub:inst6|proc:inst1|l1[2]            ;
+; sub:inst6|proc:inst|l1[1]                ; Merged with sub:inst6|proc:inst1|l1[1]            ;
+; sub:inst6|proc:inst|l1[0]                ; Merged with sub:inst6|proc:inst1|l1[0]            ;
+; sub:inst6|proc:inst|m[5]                 ; Merged with sub:inst6|proc:inst1|m[5]             ;
+; sub:inst6|proc:inst|m[4]                 ; Merged with sub:inst6|proc:inst1|m[4]             ;
+; sub:inst6|proc:inst|m[3]                 ; Merged with sub:inst6|proc:inst1|m[3]             ;
+; sub:inst6|proc:inst|l2[252]              ; Merged with sub:inst6|proc:inst1|l2[252]          ;
+; sub:inst6|proc:inst|l2[251]              ; Merged with sub:inst6|proc:inst1|l2[251]          ;
+; sub:inst6|proc:inst|l2[250]              ; Merged with sub:inst6|proc:inst1|l2[250]          ;
+; sub:inst6|proc:inst|l2[249]              ; Merged with sub:inst6|proc:inst1|l2[249]          ;
+; sub:inst6|proc:inst|l2[248]              ; Merged with sub:inst6|proc:inst1|l2[248]          ;
+; sub:inst6|proc:inst|l2[247]              ; Merged with sub:inst6|proc:inst1|l2[247]          ;
+; sub:inst6|proc:inst|l2[246]              ; Merged with sub:inst6|proc:inst1|l2[246]          ;
+; sub:inst6|proc:inst|l2[245]              ; Merged with sub:inst6|proc:inst1|l2[245]          ;
+; sub:inst6|proc:inst|l2[244]              ; Merged with sub:inst6|proc:inst1|l2[244]          ;
+; sub:inst6|proc:inst|l2[243]              ; Merged with sub:inst6|proc:inst1|l2[243]          ;
+; sub:inst6|proc:inst|l2[242]              ; Merged with sub:inst6|proc:inst1|l2[242]          ;
+; sub:inst6|proc:inst|l2[241]              ; Merged with sub:inst6|proc:inst1|l2[241]          ;
+; sub:inst6|proc:inst|l2[240]              ; Merged with sub:inst6|proc:inst1|l2[240]          ;
+; sub:inst6|proc:inst|l2[239]              ; Merged with sub:inst6|proc:inst1|l2[239]          ;
+; sub:inst6|proc:inst|l2[238]              ; Merged with sub:inst6|proc:inst1|l2[238]          ;
+; sub:inst6|proc:inst|l2[237]              ; Merged with sub:inst6|proc:inst1|l2[237]          ;
+; sub:inst6|proc:inst|l2[236]              ; Merged with sub:inst6|proc:inst1|l2[236]          ;
+; sub:inst6|proc:inst|l2[235]              ; Merged with sub:inst6|proc:inst1|l2[235]          ;
+; sub:inst6|proc:inst|l2[234]              ; Merged with sub:inst6|proc:inst1|l2[234]          ;
+; sub:inst6|proc:inst|l2[233]              ; Merged with sub:inst6|proc:inst1|l2[233]          ;
+; sub:inst6|proc:inst|l2[232]              ; Merged with sub:inst6|proc:inst1|l2[232]          ;
+; sub:inst6|proc:inst|l2[231]              ; Merged with sub:inst6|proc:inst1|l2[231]          ;
+; sub:inst6|proc:inst|l2[230]              ; Merged with sub:inst6|proc:inst1|l2[230]          ;
+; sub:inst6|proc:inst|l2[229]              ; Merged with sub:inst6|proc:inst1|l2[229]          ;
+; sub:inst6|proc:inst|l2[228]              ; Merged with sub:inst6|proc:inst1|l2[228]          ;
+; sub:inst6|proc:inst|l2[227]              ; Merged with sub:inst6|proc:inst1|l2[227]          ;
+; sub:inst6|proc:inst|l2[226]              ; Merged with sub:inst6|proc:inst1|l2[226]          ;
+; sub:inst6|proc:inst|l2[225]              ; Merged with sub:inst6|proc:inst1|l2[225]          ;
+; sub:inst6|proc:inst|l2[224]              ; Merged with sub:inst6|proc:inst1|l2[224]          ;
+; sub:inst6|proc:inst|l2[223]              ; Merged with sub:inst6|proc:inst1|l2[223]          ;
+; sub:inst6|proc:inst|l2[222]              ; Merged with sub:inst6|proc:inst1|l2[222]          ;
+; sub:inst6|proc:inst|l2[221]              ; Merged with sub:inst6|proc:inst1|l2[221]          ;
+; sub:inst6|proc:inst|l2[220]              ; Merged with sub:inst6|proc:inst1|l2[220]          ;
+; sub:inst6|proc:inst|l2[219]              ; Merged with sub:inst6|proc:inst1|l2[219]          ;
+; sub:inst6|proc:inst|l2[218]              ; Merged with sub:inst6|proc:inst1|l2[218]          ;
+; sub:inst6|proc:inst|l2[217]              ; Merged with sub:inst6|proc:inst1|l2[217]          ;
+; sub:inst6|proc:inst|l2[216]              ; Merged with sub:inst6|proc:inst1|l2[216]          ;
+; sub:inst6|proc:inst|l2[215]              ; Merged with sub:inst6|proc:inst1|l2[215]          ;
+; sub:inst6|proc:inst|l2[214]              ; Merged with sub:inst6|proc:inst1|l2[214]          ;
+; sub:inst6|proc:inst|l2[213]              ; Merged with sub:inst6|proc:inst1|l2[213]          ;
+; sub:inst6|proc:inst|l2[212]              ; Merged with sub:inst6|proc:inst1|l2[212]          ;
+; sub:inst6|proc:inst|l2[211]              ; Merged with sub:inst6|proc:inst1|l2[211]          ;
+; sub:inst6|proc:inst|l2[210]              ; Merged with sub:inst6|proc:inst1|l2[210]          ;
+; sub:inst6|proc:inst|l2[209]              ; Merged with sub:inst6|proc:inst1|l2[209]          ;
+; sub:inst6|proc:inst|l2[208]              ; Merged with sub:inst6|proc:inst1|l2[208]          ;
+; sub:inst6|proc:inst|l2[207]              ; Merged with sub:inst6|proc:inst1|l2[207]          ;
+; sub:inst6|proc:inst|l2[206]              ; Merged with sub:inst6|proc:inst1|l2[206]          ;
+; sub:inst6|proc:inst|l2[205]              ; Merged with sub:inst6|proc:inst1|l2[205]          ;
+; sub:inst6|proc:inst|l2[204]              ; Merged with sub:inst6|proc:inst1|l2[204]          ;
+; sub:inst6|proc:inst|l2[203]              ; Merged with sub:inst6|proc:inst1|l2[203]          ;
+; sub:inst6|proc:inst|l2[202]              ; Merged with sub:inst6|proc:inst1|l2[202]          ;
+; sub:inst6|proc:inst|l2[201]              ; Merged with sub:inst6|proc:inst1|l2[201]          ;
+; sub:inst6|proc:inst|l2[200]              ; Merged with sub:inst6|proc:inst1|l2[200]          ;
+; sub:inst6|proc:inst|l2[199]              ; Merged with sub:inst6|proc:inst1|l2[199]          ;
+; sub:inst6|proc:inst|l2[198]              ; Merged with sub:inst6|proc:inst1|l2[198]          ;
+; sub:inst6|proc:inst|l2[197]              ; Merged with sub:inst6|proc:inst1|l2[197]          ;
+; sub:inst6|proc:inst|l2[196]              ; Merged with sub:inst6|proc:inst1|l2[196]          ;
+; sub:inst6|proc:inst|l2[195]              ; Merged with sub:inst6|proc:inst1|l2[195]          ;
+; sub:inst6|proc:inst|l2[194]              ; Merged with sub:inst6|proc:inst1|l2[194]          ;
+; sub:inst6|proc:inst|l2[193]              ; Merged with sub:inst6|proc:inst1|l2[193]          ;
+; sub:inst6|proc:inst|l2[192]              ; Merged with sub:inst6|proc:inst1|l2[192]          ;
+; sub:inst6|proc:inst|l2[191]              ; Merged with sub:inst6|proc:inst1|l2[191]          ;
+; sub:inst6|proc:inst|l2[190]              ; Merged with sub:inst6|proc:inst1|l2[190]          ;
+; sub:inst6|proc:inst|l2[189]              ; Merged with sub:inst6|proc:inst1|l2[189]          ;
+; sub:inst6|proc:inst|l2[188]              ; Merged with sub:inst6|proc:inst1|l2[188]          ;
+; sub:inst6|proc:inst|l2[187]              ; Merged with sub:inst6|proc:inst1|l2[187]          ;
+; sub:inst6|proc:inst|l2[186]              ; Merged with sub:inst6|proc:inst1|l2[186]          ;
+; sub:inst6|proc:inst|l2[185]              ; Merged with sub:inst6|proc:inst1|l2[185]          ;
+; sub:inst6|proc:inst|l2[184]              ; Merged with sub:inst6|proc:inst1|l2[184]          ;
+; sub:inst6|proc:inst|l2[183]              ; Merged with sub:inst6|proc:inst1|l2[183]          ;
+; sub:inst6|proc:inst|l2[182]              ; Merged with sub:inst6|proc:inst1|l2[182]          ;
+; sub:inst6|proc:inst|l2[181]              ; Merged with sub:inst6|proc:inst1|l2[181]          ;
+; sub:inst6|proc:inst|l2[180]              ; Merged with sub:inst6|proc:inst1|l2[180]          ;
+; sub:inst6|proc:inst|l2[179]              ; Merged with sub:inst6|proc:inst1|l2[179]          ;
+; sub:inst6|proc:inst|l2[178]              ; Merged with sub:inst6|proc:inst1|l2[178]          ;
+; sub:inst6|proc:inst|l2[177]              ; Merged with sub:inst6|proc:inst1|l2[177]          ;
+; sub:inst6|proc:inst|l2[176]              ; Merged with sub:inst6|proc:inst1|l2[176]          ;
+; sub:inst6|proc:inst|l2[175]              ; Merged with sub:inst6|proc:inst1|l2[175]          ;
+; sub:inst6|proc:inst|l2[174]              ; Merged with sub:inst6|proc:inst1|l2[174]          ;
+; sub:inst6|proc:inst|l2[173]              ; Merged with sub:inst6|proc:inst1|l2[173]          ;
+; sub:inst6|proc:inst|l2[172]              ; Merged with sub:inst6|proc:inst1|l2[172]          ;
+; sub:inst6|proc:inst|l2[171]              ; Merged with sub:inst6|proc:inst1|l2[171]          ;
+; sub:inst6|proc:inst|l2[170]              ; Merged with sub:inst6|proc:inst1|l2[170]          ;
+; sub:inst6|proc:inst|l2[169]              ; Merged with sub:inst6|proc:inst1|l2[169]          ;
+; sub:inst6|proc:inst|l2[168]              ; Merged with sub:inst6|proc:inst1|l2[168]          ;
+; sub:inst6|proc:inst|l2[167]              ; Merged with sub:inst6|proc:inst1|l2[167]          ;
+; sub:inst6|proc:inst|l2[166]              ; Merged with sub:inst6|proc:inst1|l2[166]          ;
+; sub:inst6|proc:inst|l2[165]              ; Merged with sub:inst6|proc:inst1|l2[165]          ;
+; sub:inst6|proc:inst|l2[164]              ; Merged with sub:inst6|proc:inst1|l2[164]          ;
+; sub:inst6|proc:inst|l2[163]              ; Merged with sub:inst6|proc:inst1|l2[163]          ;
+; sub:inst6|proc:inst|l2[162]              ; Merged with sub:inst6|proc:inst1|l2[162]          ;
+; sub:inst6|proc:inst|l2[161]              ; Merged with sub:inst6|proc:inst1|l2[161]          ;
+; sub:inst6|proc:inst|l2[160]              ; Merged with sub:inst6|proc:inst1|l2[160]          ;
+; sub:inst6|proc:inst|l2[159]              ; Merged with sub:inst6|proc:inst1|l2[159]          ;
+; sub:inst6|proc:inst|l2[158]              ; Merged with sub:inst6|proc:inst1|l2[158]          ;
+; sub:inst6|proc:inst|l2[157]              ; Merged with sub:inst6|proc:inst1|l2[157]          ;
+; sub:inst6|proc:inst|l2[156]              ; Merged with sub:inst6|proc:inst1|l2[156]          ;
+; sub:inst6|proc:inst|l2[155]              ; Merged with sub:inst6|proc:inst1|l2[155]          ;
+; sub:inst6|proc:inst|l2[154]              ; Merged with sub:inst6|proc:inst1|l2[154]          ;
+; sub:inst6|proc:inst|l2[153]              ; Merged with sub:inst6|proc:inst1|l2[153]          ;
+; sub:inst6|proc:inst|l2[152]              ; Merged with sub:inst6|proc:inst1|l2[152]          ;
+; sub:inst6|proc:inst|l2[151]              ; Merged with sub:inst6|proc:inst1|l2[151]          ;
+; sub:inst6|proc:inst|l2[150]              ; Merged with sub:inst6|proc:inst1|l2[150]          ;
+; sub:inst6|proc:inst|l2[149]              ; Merged with sub:inst6|proc:inst1|l2[149]          ;
+; sub:inst6|proc:inst|l2[148]              ; Merged with sub:inst6|proc:inst1|l2[148]          ;
+; sub:inst6|proc:inst|l2[147]              ; Merged with sub:inst6|proc:inst1|l2[147]          ;
+; sub:inst6|proc:inst|l2[146]              ; Merged with sub:inst6|proc:inst1|l2[146]          ;
+; sub:inst6|proc:inst|l2[145]              ; Merged with sub:inst6|proc:inst1|l2[145]          ;
+; sub:inst6|proc:inst|l2[144]              ; Merged with sub:inst6|proc:inst1|l2[144]          ;
+; sub:inst6|proc:inst|l2[143]              ; Merged with sub:inst6|proc:inst1|l2[143]          ;
+; sub:inst6|proc:inst|l2[142]              ; Merged with sub:inst6|proc:inst1|l2[142]          ;
+; sub:inst6|proc:inst|l2[141]              ; Merged with sub:inst6|proc:inst1|l2[141]          ;
+; sub:inst6|proc:inst|l2[140]              ; Merged with sub:inst6|proc:inst1|l2[140]          ;
+; sub:inst6|proc:inst|l2[139]              ; Merged with sub:inst6|proc:inst1|l2[139]          ;
+; sub:inst6|proc:inst|l2[138]              ; Merged with sub:inst6|proc:inst1|l2[138]          ;
+; sub:inst6|proc:inst|l2[137]              ; Merged with sub:inst6|proc:inst1|l2[137]          ;
+; sub:inst6|proc:inst|l2[136]              ; Merged with sub:inst6|proc:inst1|l2[136]          ;
+; sub:inst6|proc:inst|l2[135]              ; Merged with sub:inst6|proc:inst1|l2[135]          ;
+; sub:inst6|proc:inst|l2[134]              ; Merged with sub:inst6|proc:inst1|l2[134]          ;
+; sub:inst6|proc:inst|l2[133]              ; Merged with sub:inst6|proc:inst1|l2[133]          ;
+; sub:inst6|proc:inst|l2[132]              ; Merged with sub:inst6|proc:inst1|l2[132]          ;
+; sub:inst6|proc:inst|l2[131]              ; Merged with sub:inst6|proc:inst1|l2[131]          ;
+; sub:inst6|proc:inst|l2[130]              ; Merged with sub:inst6|proc:inst1|l2[130]          ;
+; sub:inst6|proc:inst|l2[129]              ; Merged with sub:inst6|proc:inst1|l2[129]          ;
+; sub:inst6|proc:inst|l2[128]              ; Merged with sub:inst6|proc:inst1|l2[128]          ;
+; sub:inst6|proc:inst|l2[127]              ; Merged with sub:inst6|proc:inst1|l2[127]          ;
+; sub:inst6|proc:inst|l2[126]              ; Merged with sub:inst6|proc:inst1|l2[126]          ;
+; sub:inst6|proc:inst|l2[125]              ; Merged with sub:inst6|proc:inst1|l2[125]          ;
+; sub:inst6|proc:inst|l2[124]              ; Merged with sub:inst6|proc:inst1|l2[124]          ;
+; sub:inst6|proc:inst|l2[123]              ; Merged with sub:inst6|proc:inst1|l2[123]          ;
+; sub:inst6|proc:inst|l2[122]              ; Merged with sub:inst6|proc:inst1|l2[122]          ;
+; sub:inst6|proc:inst|l2[121]              ; Merged with sub:inst6|proc:inst1|l2[121]          ;
+; sub:inst6|proc:inst|l2[120]              ; Merged with sub:inst6|proc:inst1|l2[120]          ;
+; sub:inst6|proc:inst|l2[119]              ; Merged with sub:inst6|proc:inst1|l2[119]          ;
+; sub:inst6|proc:inst|l2[118]              ; Merged with sub:inst6|proc:inst1|l2[118]          ;
+; sub:inst6|proc:inst|l2[117]              ; Merged with sub:inst6|proc:inst1|l2[117]          ;
+; sub:inst6|proc:inst|l2[116]              ; Merged with sub:inst6|proc:inst1|l2[116]          ;
+; sub:inst6|proc:inst|l2[115]              ; Merged with sub:inst6|proc:inst1|l2[115]          ;
+; sub:inst6|proc:inst|l2[114]              ; Merged with sub:inst6|proc:inst1|l2[114]          ;
+; sub:inst6|proc:inst|l2[113]              ; Merged with sub:inst6|proc:inst1|l2[113]          ;
+; sub:inst6|proc:inst|l2[112]              ; Merged with sub:inst6|proc:inst1|l2[112]          ;
+; sub:inst6|proc:inst|l2[111]              ; Merged with sub:inst6|proc:inst1|l2[111]          ;
+; sub:inst6|proc:inst|l2[110]              ; Merged with sub:inst6|proc:inst1|l2[110]          ;
+; sub:inst6|proc:inst|l2[109]              ; Merged with sub:inst6|proc:inst1|l2[109]          ;
+; sub:inst6|proc:inst|l2[108]              ; Merged with sub:inst6|proc:inst1|l2[108]          ;
+; sub:inst6|proc:inst|l2[107]              ; Merged with sub:inst6|proc:inst1|l2[107]          ;
+; sub:inst6|proc:inst|l2[106]              ; Merged with sub:inst6|proc:inst1|l2[106]          ;
+; sub:inst6|proc:inst|l2[105]              ; Merged with sub:inst6|proc:inst1|l2[105]          ;
+; sub:inst6|proc:inst|l2[104]              ; Merged with sub:inst6|proc:inst1|l2[104]          ;
+; sub:inst6|proc:inst|l2[103]              ; Merged with sub:inst6|proc:inst1|l2[103]          ;
+; sub:inst6|proc:inst|l2[102]              ; Merged with sub:inst6|proc:inst1|l2[102]          ;
+; sub:inst6|proc:inst|l2[101]              ; Merged with sub:inst6|proc:inst1|l2[101]          ;
+; sub:inst6|proc:inst|l2[100]              ; Merged with sub:inst6|proc:inst1|l2[100]          ;
+; sub:inst6|proc:inst|l2[99]               ; Merged with sub:inst6|proc:inst1|l2[99]           ;
+; sub:inst6|proc:inst|l2[98]               ; Merged with sub:inst6|proc:inst1|l2[98]           ;
+; sub:inst6|proc:inst|l2[97]               ; Merged with sub:inst6|proc:inst1|l2[97]           ;
+; sub:inst6|proc:inst|l2[96]               ; Merged with sub:inst6|proc:inst1|l2[96]           ;
+; sub:inst6|proc:inst|l2[95]               ; Merged with sub:inst6|proc:inst1|l2[95]           ;
+; sub:inst6|proc:inst|l2[94]               ; Merged with sub:inst6|proc:inst1|l2[94]           ;
+; sub:inst6|proc:inst|l2[93]               ; Merged with sub:inst6|proc:inst1|l2[93]           ;
+; sub:inst6|proc:inst|l2[92]               ; Merged with sub:inst6|proc:inst1|l2[92]           ;
+; sub:inst6|proc:inst|l2[91]               ; Merged with sub:inst6|proc:inst1|l2[91]           ;
+; sub:inst6|proc:inst|l2[90]               ; Merged with sub:inst6|proc:inst1|l2[90]           ;
+; sub:inst6|proc:inst|l2[89]               ; Merged with sub:inst6|proc:inst1|l2[89]           ;
+; sub:inst6|proc:inst|l2[88]               ; Merged with sub:inst6|proc:inst1|l2[88]           ;
+; sub:inst6|proc:inst|l2[87]               ; Merged with sub:inst6|proc:inst1|l2[87]           ;
+; sub:inst6|proc:inst|l2[86]               ; Merged with sub:inst6|proc:inst1|l2[86]           ;
+; sub:inst6|proc:inst|l2[85]               ; Merged with sub:inst6|proc:inst1|l2[85]           ;
+; sub:inst6|proc:inst|l2[84]               ; Merged with sub:inst6|proc:inst1|l2[84]           ;
+; sub:inst6|proc:inst|l2[83]               ; Merged with sub:inst6|proc:inst1|l2[83]           ;
+; sub:inst6|proc:inst|l2[82]               ; Merged with sub:inst6|proc:inst1|l2[82]           ;
+; sub:inst6|proc:inst|l2[81]               ; Merged with sub:inst6|proc:inst1|l2[81]           ;
+; sub:inst6|proc:inst|l2[80]               ; Merged with sub:inst6|proc:inst1|l2[80]           ;
+; sub:inst6|proc:inst|l2[79]               ; Merged with sub:inst6|proc:inst1|l2[79]           ;
+; sub:inst6|proc:inst|l2[78]               ; Merged with sub:inst6|proc:inst1|l2[78]           ;
+; sub:inst6|proc:inst|l2[77]               ; Merged with sub:inst6|proc:inst1|l2[77]           ;
+; sub:inst6|proc:inst|l2[76]               ; Merged with sub:inst6|proc:inst1|l2[76]           ;
+; sub:inst6|proc:inst|l2[75]               ; Merged with sub:inst6|proc:inst1|l2[75]           ;
+; sub:inst6|proc:inst|l2[74]               ; Merged with sub:inst6|proc:inst1|l2[74]           ;
+; sub:inst6|proc:inst|l2[73]               ; Merged with sub:inst6|proc:inst1|l2[73]           ;
+; sub:inst6|proc:inst|l2[72]               ; Merged with sub:inst6|proc:inst1|l2[72]           ;
+; sub:inst6|proc:inst|l2[71]               ; Merged with sub:inst6|proc:inst1|l2[71]           ;
+; sub:inst6|proc:inst|l2[70]               ; Merged with sub:inst6|proc:inst1|l2[70]           ;
+; sub:inst6|proc:inst|l2[69]               ; Merged with sub:inst6|proc:inst1|l2[69]           ;
+; sub:inst6|proc:inst|l2[68]               ; Merged with sub:inst6|proc:inst1|l2[68]           ;
+; sub:inst6|proc:inst|l2[67]               ; Merged with sub:inst6|proc:inst1|l2[67]           ;
+; sub:inst6|proc:inst|l2[66]               ; Merged with sub:inst6|proc:inst1|l2[66]           ;
+; sub:inst6|proc:inst|l2[65]               ; Merged with sub:inst6|proc:inst1|l2[65]           ;
+; sub:inst6|proc:inst|l2[64]               ; Merged with sub:inst6|proc:inst1|l2[64]           ;
+; sub:inst6|proc:inst|l2[63]               ; Merged with sub:inst6|proc:inst1|l2[63]           ;
+; sub:inst6|proc:inst|l2[62]               ; Merged with sub:inst6|proc:inst1|l2[62]           ;
+; sub:inst6|proc:inst|l2[61]               ; Merged with sub:inst6|proc:inst1|l2[61]           ;
+; sub:inst6|proc:inst|l2[60]               ; Merged with sub:inst6|proc:inst1|l2[60]           ;
+; sub:inst6|proc:inst|l2[59]               ; Merged with sub:inst6|proc:inst1|l2[59]           ;
+; sub:inst6|proc:inst|l2[58]               ; Merged with sub:inst6|proc:inst1|l2[58]           ;
+; sub:inst6|proc:inst|l2[57]               ; Merged with sub:inst6|proc:inst1|l2[57]           ;
+; sub:inst6|proc:inst|l2[56]               ; Merged with sub:inst6|proc:inst1|l2[56]           ;
+; sub:inst6|proc:inst|l2[55]               ; Merged with sub:inst6|proc:inst1|l2[55]           ;
+; sub:inst6|proc:inst|l2[54]               ; Merged with sub:inst6|proc:inst1|l2[54]           ;
+; sub:inst6|proc:inst|l2[53]               ; Merged with sub:inst6|proc:inst1|l2[53]           ;
+; sub:inst6|proc:inst|l2[52]               ; Merged with sub:inst6|proc:inst1|l2[52]           ;
+; sub:inst6|proc:inst|l2[51]               ; Merged with sub:inst6|proc:inst1|l2[51]           ;
+; sub:inst6|proc:inst|l2[50]               ; Merged with sub:inst6|proc:inst1|l2[50]           ;
+; sub:inst6|proc:inst|l2[49]               ; Merged with sub:inst6|proc:inst1|l2[49]           ;
+; sub:inst6|proc:inst|l2[48]               ; Merged with sub:inst6|proc:inst1|l2[48]           ;
+; sub:inst6|proc:inst|l2[47]               ; Merged with sub:inst6|proc:inst1|l2[47]           ;
+; sub:inst6|proc:inst|l2[46]               ; Merged with sub:inst6|proc:inst1|l2[46]           ;
+; sub:inst6|proc:inst|l2[45]               ; Merged with sub:inst6|proc:inst1|l2[45]           ;
+; sub:inst6|proc:inst|l2[44]               ; Merged with sub:inst6|proc:inst1|l2[44]           ;
+; sub:inst6|proc:inst|l2[43]               ; Merged with sub:inst6|proc:inst1|l2[43]           ;
+; sub:inst6|proc:inst|l2[42]               ; Merged with sub:inst6|proc:inst1|l2[42]           ;
+; sub:inst6|proc:inst|l2[41]               ; Merged with sub:inst6|proc:inst1|l2[41]           ;
+; sub:inst6|proc:inst|l2[40]               ; Merged with sub:inst6|proc:inst1|l2[40]           ;
+; sub:inst6|proc:inst|l2[39]               ; Merged with sub:inst6|proc:inst1|l2[39]           ;
+; sub:inst6|proc:inst|l2[38]               ; Merged with sub:inst6|proc:inst1|l2[38]           ;
+; sub:inst6|proc:inst|l2[37]               ; Merged with sub:inst6|proc:inst1|l2[37]           ;
+; sub:inst6|proc:inst|l2[36]               ; Merged with sub:inst6|proc:inst1|l2[36]           ;
+; sub:inst6|proc:inst|l2[35]               ; Merged with sub:inst6|proc:inst1|l2[35]           ;
+; sub:inst6|proc:inst|l2[34]               ; Merged with sub:inst6|proc:inst1|l2[34]           ;
+; sub:inst6|proc:inst|l2[33]               ; Merged with sub:inst6|proc:inst1|l2[33]           ;
+; sub:inst6|proc:inst|l2[32]               ; Merged with sub:inst6|proc:inst1|l2[32]           ;
+; sub:inst6|proc:inst|l2[31]               ; Merged with sub:inst6|proc:inst1|l2[31]           ;
+; sub:inst6|proc:inst|l2[30]               ; Merged with sub:inst6|proc:inst1|l2[30]           ;
+; sub:inst6|proc:inst|l2[29]               ; Merged with sub:inst6|proc:inst1|l2[29]           ;
+; sub:inst6|proc:inst|l2[28]               ; Merged with sub:inst6|proc:inst1|l2[28]           ;
+; sub:inst6|proc:inst|l2[27]               ; Merged with sub:inst6|proc:inst1|l2[27]           ;
+; sub:inst6|proc:inst|l2[26]               ; Merged with sub:inst6|proc:inst1|l2[26]           ;
+; sub:inst6|proc:inst|l2[25]               ; Merged with sub:inst6|proc:inst1|l2[25]           ;
+; sub:inst6|proc:inst|l2[24]               ; Merged with sub:inst6|proc:inst1|l2[24]           ;
+; sub:inst6|proc:inst|l2[23]               ; Merged with sub:inst6|proc:inst1|l2[23]           ;
+; sub:inst6|proc:inst|l2[22]               ; Merged with sub:inst6|proc:inst1|l2[22]           ;
+; sub:inst6|proc:inst|l2[21]               ; Merged with sub:inst6|proc:inst1|l2[21]           ;
+; sub:inst6|proc:inst|l2[20]               ; Merged with sub:inst6|proc:inst1|l2[20]           ;
+; sub:inst6|proc:inst|l2[19]               ; Merged with sub:inst6|proc:inst1|l2[19]           ;
+; sub:inst6|proc:inst|l2[18]               ; Merged with sub:inst6|proc:inst1|l2[18]           ;
+; sub:inst6|proc:inst|l2[17]               ; Merged with sub:inst6|proc:inst1|l2[17]           ;
+; sub:inst6|proc:inst|l2[16]               ; Merged with sub:inst6|proc:inst1|l2[16]           ;
+; sub:inst6|proc:inst|l2[15]               ; Merged with sub:inst6|proc:inst1|l2[15]           ;
+; sub:inst6|proc:inst|l2[14]               ; Merged with sub:inst6|proc:inst1|l2[14]           ;
+; sub:inst6|proc:inst|l2[13]               ; Merged with sub:inst6|proc:inst1|l2[13]           ;
+; sub:inst6|proc:inst|l2[12]               ; Merged with sub:inst6|proc:inst1|l2[12]           ;
+; sub:inst6|proc:inst|l2[11]               ; Merged with sub:inst6|proc:inst1|l2[11]           ;
+; sub:inst6|proc:inst|l2[10]               ; Merged with sub:inst6|proc:inst1|l2[10]           ;
+; sub:inst6|proc:inst|l2[9]                ; Merged with sub:inst6|proc:inst1|l2[9]            ;
+; sub:inst6|proc:inst|l2[8]                ; Merged with sub:inst6|proc:inst1|l2[8]            ;
+; sub:inst6|proc:inst|l2[7]                ; Merged with sub:inst6|proc:inst1|l2[7]            ;
+; sub:inst6|proc:inst|l2[6]                ; Merged with sub:inst6|proc:inst1|l2[6]            ;
+; sub:inst6|proc:inst|l2[5]                ; Merged with sub:inst6|proc:inst1|l2[5]            ;
+; sub:inst6|proc:inst|l2[4]                ; Merged with sub:inst6|proc:inst1|l2[4]            ;
+; sub:inst6|proc:inst|l2[3]                ; Merged with sub:inst6|proc:inst1|l2[3]            ;
+; sub:inst6|proc:inst|l2[2]                ; Merged with sub:inst6|proc:inst1|l2[2]            ;
+; sub:inst6|proc:inst|l2[1]                ; Merged with sub:inst6|proc:inst1|l2[1]            ;
+; sub:inst6|proc:inst|l2[0]                ; Merged with sub:inst6|proc:inst1|l2[0]            ;
+; sub:inst6|proc:inst|l3[2]                ; Merged with sub:inst6|proc:inst1|l3[2]            ;
+; sub:inst6|proc:inst|m[1]                 ; Merged with sub:inst6|proc:inst1|m[1]             ;
+; VGA_SYNC:inst2|pixel_row[9]              ; Stuck at GND due to stuck port data_in            ;
+; Total Number of Removed Registers = 539  ;                                                   ;
++------------------------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -345,32 +832,32 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2121  ;
-; Number of registers using Synchronous Clear  ; 14    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 5     ;
+; Total registers                              ; 2635  ;
+; Number of registers using Synchronous Clear  ; 13    ;
+; Number of registers using Synchronous Load   ; 11    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 19    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component|altsyncram_a171:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                           ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                            ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------+
-
-
 +--------------------------------------------------------------------------------------------------+
-; Source assignments for rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated ;
+; Source assignments for rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                 ;
 +---------------------------------+--------------------+------+------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                  ;
 +---------------------------------+--------------------+------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0|shift_taps_n4m:auto_generated|altsyncram_6i81:altsyncram2 ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                              ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                               ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------+
@@ -755,126 +1242,81 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; B              ; 001   ; Unsigned Binary                                             ;
 ; C              ; 010   ; Unsigned Binary                                             ;
 ; D              ; 011   ; Unsigned Binary                                             ;
-; E              ; 100   ; Unsigned Binary                                             ;
 +----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                  ;
-+------------------------------------+----------------------+-------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                               ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                            ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                          ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                          ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                        ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                               ;
-; OPERATION_MODE                     ; ROM                  ; Untyped                                               ;
-; WIDTH_A                            ; 1                    ; Signed Integer                                        ;
-; WIDTHAD_A                          ; 3                    ; Signed Integer                                        ;
-; NUMWORDS_A                         ; 8                    ; Signed Integer                                        ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                               ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                               ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                               ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                               ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                               ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                               ;
-; WIDTH_B                            ; 1                    ; Untyped                                               ;
-; WIDTHAD_B                          ; 1                    ; Untyped                                               ;
-; NUMWORDS_B                         ; 1                    ; Untyped                                               ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                               ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                               ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                               ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                               ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                               ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                               ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                               ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                               ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                               ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                               ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                               ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                               ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                        ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                               ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                               ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                               ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                               ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                               ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                               ;
-; INIT_FILE                          ; instru.mif           ; Untyped                                               ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                               ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                               ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                               ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                               ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                               ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                               ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                               ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                               ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                               ;
-; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                               ;
-; CBXI_PARAMETER                     ; altsyncram_a171      ; Untyped                                               ;
-+------------------------------------+----------------------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: rom_1:inst|altsyncram:altsyncram_component ;
-+------------------------------------+-------------------------+--------------------------+
-; Parameter Name                     ; Value                   ; Type                     ;
-+------------------------------------+-------------------------+--------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                       ; Untyped                  ;
-; AUTO_CARRY_CHAINS                  ; ON                      ; AUTO_CARRY               ;
-; IGNORE_CARRY_BUFFERS               ; OFF                     ; IGNORE_CARRY             ;
-; AUTO_CASCADE_CHAINS                ; ON                      ; AUTO_CASCADE             ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                     ; IGNORE_CASCADE           ;
-; WIDTH_BYTEENA                      ; 1                       ; Untyped                  ;
-; OPERATION_MODE                     ; ROM                     ; Untyped                  ;
-; WIDTH_A                            ; 1                       ; Signed Integer           ;
-; WIDTHAD_A                          ; 15                      ; Signed Integer           ;
-; NUMWORDS_A                         ; 32768                   ; Signed Integer           ;
-; OUTDATA_REG_A                      ; CLOCK0                  ; Untyped                  ;
-; ADDRESS_ACLR_A                     ; NONE                    ; Untyped                  ;
-; OUTDATA_ACLR_A                     ; NONE                    ; Untyped                  ;
-; WRCONTROL_ACLR_A                   ; NONE                    ; Untyped                  ;
-; INDATA_ACLR_A                      ; NONE                    ; Untyped                  ;
-; BYTEENA_ACLR_A                     ; NONE                    ; Untyped                  ;
-; WIDTH_B                            ; 1                       ; Untyped                  ;
-; WIDTHAD_B                          ; 1                       ; Untyped                  ;
-; NUMWORDS_B                         ; 1                       ; Untyped                  ;
-; INDATA_REG_B                       ; CLOCK1                  ; Untyped                  ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                  ; Untyped                  ;
-; RDCONTROL_REG_B                    ; CLOCK1                  ; Untyped                  ;
-; ADDRESS_REG_B                      ; CLOCK1                  ; Untyped                  ;
-; OUTDATA_REG_B                      ; UNREGISTERED            ; Untyped                  ;
-; BYTEENA_REG_B                      ; CLOCK1                  ; Untyped                  ;
-; INDATA_ACLR_B                      ; NONE                    ; Untyped                  ;
-; WRCONTROL_ACLR_B                   ; NONE                    ; Untyped                  ;
-; ADDRESS_ACLR_B                     ; NONE                    ; Untyped                  ;
-; OUTDATA_ACLR_B                     ; NONE                    ; Untyped                  ;
-; RDCONTROL_ACLR_B                   ; NONE                    ; Untyped                  ;
-; BYTEENA_ACLR_B                     ; NONE                    ; Untyped                  ;
-; WIDTH_BYTEENA_A                    ; 1                       ; Signed Integer           ;
-; WIDTH_BYTEENA_B                    ; 1                       ; Untyped                  ;
-; RAM_BLOCK_TYPE                     ; AUTO                    ; Untyped                  ;
-; BYTE_SIZE                          ; 8                       ; Untyped                  ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE               ; Untyped                  ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ    ; Untyped                  ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ    ; Untyped                  ;
-; INIT_FILE                          ; ../matlab proj/sara.mif ; Untyped                  ;
-; INIT_FILE_LAYOUT                   ; PORT_A                  ; Untyped                  ;
-; MAXIMUM_DEPTH                      ; 0                       ; Untyped                  ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                  ; Untyped                  ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                  ; Untyped                  ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                  ; Untyped                  ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                  ; Untyped                  ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN         ; Untyped                  ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN         ; Untyped                  ;
-; ENABLE_ECC                         ; FALSE                   ; Untyped                  ;
-; DEVICE_FAMILY                      ; Cyclone II              ; Untyped                  ;
-; CBXI_PARAMETER                     ; altsyncram_n981         ; Untyped                  ;
-+------------------------------------+-------------------------+--------------------------+
++------------------------------------+-----------------------------+----------------------+
+; Parameter Name                     ; Value                       ; Type                 ;
++------------------------------------+-----------------------------+----------------------+
+; BYTE_SIZE_BLOCK                    ; 8                           ; Untyped              ;
+; AUTO_CARRY_CHAINS                  ; ON                          ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                         ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS                ; ON                          ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                         ; IGNORE_CASCADE       ;
+; WIDTH_BYTEENA                      ; 1                           ; Untyped              ;
+; OPERATION_MODE                     ; ROM                         ; Untyped              ;
+; WIDTH_A                            ; 1                           ; Signed Integer       ;
+; WIDTHAD_A                          ; 15                          ; Signed Integer       ;
+; NUMWORDS_A                         ; 32768                       ; Signed Integer       ;
+; OUTDATA_REG_A                      ; CLOCK0                      ; Untyped              ;
+; ADDRESS_ACLR_A                     ; NONE                        ; Untyped              ;
+; OUTDATA_ACLR_A                     ; NONE                        ; Untyped              ;
+; WRCONTROL_ACLR_A                   ; NONE                        ; Untyped              ;
+; INDATA_ACLR_A                      ; NONE                        ; Untyped              ;
+; BYTEENA_ACLR_A                     ; NONE                        ; Untyped              ;
+; WIDTH_B                            ; 1                           ; Untyped              ;
+; WIDTHAD_B                          ; 1                           ; Untyped              ;
+; NUMWORDS_B                         ; 1                           ; Untyped              ;
+; INDATA_REG_B                       ; CLOCK1                      ; Untyped              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                      ; Untyped              ;
+; RDCONTROL_REG_B                    ; CLOCK1                      ; Untyped              ;
+; ADDRESS_REG_B                      ; CLOCK1                      ; Untyped              ;
+; OUTDATA_REG_B                      ; UNREGISTERED                ; Untyped              ;
+; BYTEENA_REG_B                      ; CLOCK1                      ; Untyped              ;
+; INDATA_ACLR_B                      ; NONE                        ; Untyped              ;
+; WRCONTROL_ACLR_B                   ; NONE                        ; Untyped              ;
+; ADDRESS_ACLR_B                     ; NONE                        ; Untyped              ;
+; OUTDATA_ACLR_B                     ; NONE                        ; Untyped              ;
+; RDCONTROL_ACLR_B                   ; NONE                        ; Untyped              ;
+; BYTEENA_ACLR_B                     ; NONE                        ; Untyped              ;
+; WIDTH_BYTEENA_A                    ; 1                           ; Signed Integer       ;
+; WIDTH_BYTEENA_B                    ; 1                           ; Untyped              ;
+; RAM_BLOCK_TYPE                     ; AUTO                        ; Untyped              ;
+; BYTE_SIZE                          ; 8                           ; Untyped              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                   ; Untyped              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ        ; Untyped              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ        ; Untyped              ;
+; INIT_FILE                          ; ../matlab proj/estrelas.mif ; Untyped              ;
+; INIT_FILE_LAYOUT                   ; PORT_A                      ; Untyped              ;
+; MAXIMUM_DEPTH                      ; 0                           ; Untyped              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                      ; Untyped              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                      ; Untyped              ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                      ; Untyped              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                      ; Untyped              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN             ; Untyped              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN             ; Untyped              ;
+; ENABLE_ECC                         ; FALSE                       ; Untyped              ;
+; DEVICE_FAMILY                      ; Cyclone II                  ; Untyped              ;
+; CBXI_PARAMETER                     ; altsyncram_jn81             ; Untyped              ;
++------------------------------------+-----------------------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0 ;
++----------------+----------------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                                        ;
++----------------+----------------+-----------------------------------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                                                     ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                                                     ;
+; TAP_DISTANCE   ; 1032           ; Untyped                                                                     ;
+; WIDTH          ; 1              ; Untyped                                                                     ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                                                     ;
+; CBXI_PARAMETER ; shift_taps_n4m ; Untyped                                                                     ;
++----------------+----------------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -895,35 +1337,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+-----------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                 ;
-+-------------------------------------------+----------------------------------------------------------------------+
-; Name                                      ; Value                                                                ;
-+-------------------------------------------+----------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                    ;
-; Entity Instance                           ; processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                                                  ;
-;     -- WIDTH_A                            ; 1                                                                    ;
-;     -- NUMWORDS_A                         ; 8                                                                    ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                                               ;
-;     -- WIDTH_B                            ; 1                                                                    ;
-;     -- NUMWORDS_B                         ; 1                                                                    ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                               ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                         ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                 ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                            ;
-; Entity Instance                           ; rom_1:inst|altsyncram:altsyncram_component                           ;
-;     -- OPERATION_MODE                     ; ROM                                                                  ;
-;     -- WIDTH_A                            ; 1                                                                    ;
-;     -- NUMWORDS_A                         ; 32768                                                                ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                                               ;
-;     -- WIDTH_B                            ; 1                                                                    ;
-;     -- NUMWORDS_B                         ; 1                                                                    ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                               ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                         ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                 ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                            ;
-+-------------------------------------------+----------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                       ;
++-------------------------------------------+--------------------------------------------+
+; Name                                      ; Value                                      ;
++-------------------------------------------+--------------------------------------------+
+; Number of entity instances                ; 1                                          ;
+; Entity Instance                           ; rom_1:inst|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                        ;
+;     -- WIDTH_A                            ; 1                                          ;
+;     -- NUMWORDS_A                         ; 32768                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                     ;
+;     -- WIDTH_B                            ; 1                                          ;
+;     -- NUMWORDS_B                         ; 1                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
++-------------------------------------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; altshift_taps Parameter Settings by Entity Instance                                       ;
++----------------------------+--------------------------------------------------------------+
+; Name                       ; Value                                                        ;
++----------------------------+--------------------------------------------------------------+
+; Number of entity instances ; 1                                                            ;
+; Entity Instance            ; processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                                            ;
+;     -- TAP_DISTANCE        ; 1032                                                         ;
+;     -- WIDTH               ; 1                                                            ;
++----------------------------+--------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -932,7 +1376,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Oct 31 22:39:10 2019
+    Info: Processing started: Fri Nov 08 10:11:23 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proj1 -c proj1
 Info: Found 2 design units, including 1 entities, in source file rom_1.vhd
     Info: Found design unit 1: rom_1-SYN
@@ -959,8 +1403,7 @@ Warning: Can't analyze file -- file proc2.v is missing
 Warning: Can't analyze file -- file proc3.v is missing
 Warning: Can't analyze file -- file proc4.v is missing
 Warning: Can't analyze file -- file proc1.v is missing
-Info: Found 1 design units, including 1 entities, in source file maqbruno.v
-    Info: Found entity 1: maqBruno
+Warning: Can't analyze file -- file maqBruno.v is missing
 Info: Found 1 design units, including 1 entities, in source file maqeproc.bdf
     Info: Found entity 1: maqeproc
 Info: Found 1 design units, including 1 entities, in source file mux_000.v
@@ -975,7 +1418,15 @@ Info: Found 1 design units, including 1 entities, in source file processamento.b
     Info: Found entity 1: processamento
 Info: Found 1 design units, including 1 entities, in source file ledizinhos.v
     Info: Found entity 1: ledizinhos
+Warning: Can't analyze file -- file sub.v is missing
+Info: Found 1 design units, including 1 entities, in source file sub.bdf
+    Info: Found entity 1: sub
+Warning: Can't analyze file -- file subtrator.v is missing
+Warning: Can't analyze file -- file modulo_xor.v is missing
+Info: Found 1 design units, including 1 entities, in source file mod_xor.v
+    Info: Found entity 1: mod_xor
 Info: Elaborating entity "proj1" for the top level hierarchy
+Warning: Block or symbol "NOT" of instance "inst35" overlaps another block or symbol
 Warning: Using design file vga_sync.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info: Found design unit 1: VGA_SYNC-a
     Info: Found entity 1: VGA_SYNC
@@ -997,57 +1448,31 @@ Info: Instantiated megafunction "VGA_SYNC:inst2|video_PLL:video_PLL_inst|altpll:
     Info: Parameter "operation_mode" = "NORMAL"
     Info: Parameter "compensate_clock" = "CLK0"
     Info: Parameter "clk0_phase_shift" = "0"
-Info: Elaborating entity "processamento" for hierarchy "processamento:inst24"
-Info: Elaborating entity "proc" for hierarchy "processamento:inst24|proc:inst20"
-Warning (10230): Verilog HDL assignment warning at proc.v(16): truncated value with size 257 to match size of target (256)
-Warning (10230): Verilog HDL assignment warning at proc.v(17): truncated value with size 257 to match size of target (256)
-Warning (10230): Verilog HDL assignment warning at proc.v(18): truncated value with size 4 to match size of target (3)
-Info: Elaborating entity "state_machine" for hierarchy "processamento:inst24|state_machine:inst"
-Info: Elaborating entity "mux_000" for hierarchy "processamento:inst24|mux_000:inst4"
-Warning (10235): Verilog HDL Always Construct warning at mux_000.v(8): variable "a" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at mux_000.v(6): inferring latch(es) for variable "saida", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "saida" at mux_000.v(6)
-Info: Elaborating entity "rom_state" for hierarchy "processamento:inst24|rom_state:inst6"
-Info: Elaborating entity "altsyncram" for hierarchy "processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component"
-Info: Elaborated megafunction instantiation "processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component"
-Info: Instantiated megafunction "processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component" with the following parameter:
-    Info: Parameter "clock_enable_input_a" = "BYPASS"
-    Info: Parameter "clock_enable_output_a" = "BYPASS"
-    Info: Parameter "init_file" = "instru.mif"
-    Info: Parameter "intended_device_family" = "Cyclone II"
-    Info: Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info: Parameter "lpm_type" = "altsyncram"
-    Info: Parameter "numwords_a" = "8"
-    Info: Parameter "operation_mode" = "ROM"
-    Info: Parameter "outdata_aclr_a" = "NONE"
-    Info: Parameter "outdata_reg_a" = "CLOCK0"
-    Info: Parameter "widthad_a" = "3"
-    Info: Parameter "width_a" = "1"
-    Info: Parameter "width_byteena_a" = "1"
-Info: Found 1 design units, including 1 entities, in source file db/altsyncram_a171.tdf
-    Info: Found entity 1: altsyncram_a171
-Info: Elaborating entity "altsyncram_a171" for hierarchy "processamento:inst24|rom_state:inst6|altsyncram:altsyncram_component|altsyncram_a171:auto_generated"
-Info: Elaborating entity "mux_001" for hierarchy "processamento:inst24|mux_001:inst5"
-Warning (10235): Verilog HDL Always Construct warning at mux_001.v(8): variable "a" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at mux_001.v(6): inferring latch(es) for variable "saida", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "saida" at mux_001.v(6)
-Info: Elaborating entity "mux_010" for hierarchy "processamento:inst24|mux_010:inst8"
-Warning (10235): Verilog HDL Always Construct warning at mux_010.v(8): variable "a" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at mux_010.v(6): inferring latch(es) for variable "saida", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "saida" at mux_010.v(6)
-Info: Elaborating entity "mux_011" for hierarchy "processamento:inst24|mux_011:inst9"
-Warning (10235): Verilog HDL Always Construct warning at mux_011.v(8): variable "a" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at mux_011.v(6): inferring latch(es) for variable "saida", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "saida" at mux_011.v(6)
-Info: Elaborating entity "ledizinhos" for hierarchy "processamento:inst24|ledizinhos:inst1"
 Info: Elaborating entity "janela" for hierarchy "janela:inst5"
+Info: Elaborating entity "sub" for hierarchy "sub:inst6"
+Info: Elaborating entity "mod_xor" for hierarchy "sub:inst6|mod_xor:inst2"
+Info: Elaborating entity "proc" for hierarchy "sub:inst6|proc:inst"
+Warning (10230): Verilog HDL assignment warning at proc.v(18): truncated value with size 257 to match size of target (256)
+Warning (10230): Verilog HDL assignment warning at proc.v(19): truncated value with size 257 to match size of target (256)
+Warning (10230): Verilog HDL assignment warning at proc.v(20): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at proc.v(21): truncated value with size 259 to match size of target (258)
+Info: Elaborating entity "processamento" for hierarchy "processamento:inst24"
+Info: Elaborating entity "state_machine" for hierarchy "processamento:inst24|state_machine:inst"
+Warning (10240): Verilog HDL Always Construct warning at state_machine.v(12): inferring latch(es) for variable "q0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at state_machine.v(12): inferring latch(es) for variable "q1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at state_machine.v(12): inferring latch(es) for variable "q2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at state_machine.v(12): inferring latch(es) for variable "q3", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "q3" at state_machine.v(12)
+Info (10041): Inferred latch for "q2" at state_machine.v(12)
+Info (10041): Inferred latch for "q1" at state_machine.v(12)
+Info (10041): Inferred latch for "q0" at state_machine.v(12)
 Info: Elaborating entity "rom_1" for hierarchy "rom_1:inst"
 Info: Elaborating entity "altsyncram" for hierarchy "rom_1:inst|altsyncram:altsyncram_component"
 Info: Elaborated megafunction instantiation "rom_1:inst|altsyncram:altsyncram_component"
 Info: Instantiated megafunction "rom_1:inst|altsyncram:altsyncram_component" with the following parameter:
     Info: Parameter "clock_enable_input_a" = "BYPASS"
     Info: Parameter "clock_enable_output_a" = "BYPASS"
-    Info: Parameter "init_file" = "../matlab proj/sara.mif"
+    Info: Parameter "init_file" = "../matlab proj/estrelas.mif"
     Info: Parameter "intended_device_family" = "Cyclone II"
     Info: Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info: Parameter "lpm_type" = "altsyncram"
@@ -1058,33 +1483,56 @@ Info: Instantiated megafunction "rom_1:inst|altsyncram:altsyncram_component" wit
     Info: Parameter "widthad_a" = "15"
     Info: Parameter "width_a" = "1"
     Info: Parameter "width_byteena_a" = "1"
-Info: Found 1 design units, including 1 entities, in source file db/altsyncram_n981.tdf
-    Info: Found entity 1: altsyncram_n981
-Info: Elaborating entity "altsyncram_n981" for hierarchy "rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_jn81.tdf
+    Info: Found entity 1: altsyncram_jn81
+Info: Elaborating entity "altsyncram_jn81" for hierarchy "rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated"
 Info: Found 1 design units, including 1 entities, in source file db/decode_9oa.tdf
     Info: Found entity 1: decode_9oa
-Info: Elaborating entity "decode_9oa" for hierarchy "rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated|decode_9oa:deep_decode"
+Info: Elaborating entity "decode_9oa" for hierarchy "rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated|decode_9oa:deep_decode"
 Info: Found 1 design units, including 1 entities, in source file db/mux_iib.tdf
     Info: Found entity 1: mux_iib
-Info: Elaborating entity "mux_iib" for hierarchy "rom_1:inst|altsyncram:altsyncram_component|altsyncram_n981:auto_generated|mux_iib:mux2"
+Info: Elaborating entity "mux_iib" for hierarchy "rom_1:inst|altsyncram:altsyncram_component|altsyncram_jn81:auto_generated|mux_iib:mux2"
 Info: Elaborating entity "conc" for hierarchy "conc:inst1"
-Info: 4 registers lost all their fanouts during netlist optimizations. The first 4 are displayed below.
-    Info: Register "processamento:inst24|state_machine:inst|y~4" lost all its fanouts during netlist optimizations.
-    Info: Register "processamento:inst24|state_machine:inst|y~5" lost all its fanouts during netlist optimizations.
-    Info: Register "processamento:inst24|state_machine:inst|Y~4" lost all its fanouts during netlist optimizations.
-    Info: Register "processamento:inst24|state_machine:inst|Y~5" lost all its fanouts during netlist optimizations.
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred altshift_taps megafunction from the following design logic: "processamento:inst24|proc:inst17|lbypass[257]~0"
+        Info: Parameter NUMBER_OF_TAPS set to 1
+        Info: Parameter TAP_DISTANCE set to 1032
+        Info: Parameter WIDTH set to 1
+Info: Elaborated megafunction instantiation "processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0"
+Info: Instantiated megafunction "processamento:inst24|proc:inst17|altshift_taps:lbypass_rtl_0" with the following parameter:
+    Info: Parameter "NUMBER_OF_TAPS" = "1"
+    Info: Parameter "TAP_DISTANCE" = "1032"
+    Info: Parameter "WIDTH" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/shift_taps_n4m.tdf
+    Info: Found entity 1: shift_taps_n4m
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_6i81.tdf
+    Info: Found entity 1: altsyncram_6i81
+Info: Found 1 design units, including 1 entities, in source file db/cntr_lqf.tdf
+    Info: Found entity 1: cntr_lqf
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_mdc.tdf
+    Info: Found entity 1: cmpr_mdc
+Info: Duplicate LATCH primitives merged into single LATCH primitive
+    Info: Duplicate LATCH primitive "processamento:inst24|state_machine:inst|q0" merged with LATCH primitive "processamento:inst24|state_machine:inst|q3"
+    Info: Duplicate LATCH primitive "processamento:inst24|state_machine:inst|q1" merged with LATCH primitive "processamento:inst24|state_machine:inst|q2"
+Warning: Latch processamento:inst24|state_machine:inst|q3 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal SW[7]
+Warning: Latch processamento:inst24|state_machine:inst|q2 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal SW[8]
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
 Info: Generated suppressed messages file C:/Users/Thiago/Desktop/Temp/projeto1/output_files/proj1.map.smsg
-Info: Implemented 2204 device resources after synthesis - the final resource count might be different
-    Info: Implemented 4 input pins
-    Info: Implemented 10 output pins
-    Info: Implemented 2180 logic cells
+Info: Implemented 2716 device resources after synthesis - the final resource count might be different
+    Info: Implemented 6 input pins
+    Info: Implemented 7 output pins
+    Info: Implemented 2693 logic cells
     Info: Implemented 9 RAM segments
     Info: Implemented 1 PLLs
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 268 megabytes
-    Info: Processing ended: Thu Oct 31 22:39:15 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:06
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 285 megabytes
+    Info: Processing ended: Fri Nov 08 10:11:48 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+

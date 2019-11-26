@@ -1,27 +1,54 @@
-module state_machine (clk, rst, a, state, on);
-	input clk, rst, a;
-  	output [2:0] state;
-  	output reg on;
+module state_machine (clk, rst, a, b, q0, q1, q2, q3, q4);
+	input clk, rst;
+	input a, b;
+  	output reg q0, q1, q2, q3, q4;
+  	wire [1:0] c;
 	reg [2:0] y, Y;
 	
-  	parameter A = 3'b000, B = 3'b001, C = 3'b010, D = 3'b011, E = 3'b100;
+	assign c = {a,b};
 	
-	always @ (posedge a)
+  	parameter A = 2'b00, B = 2'b01, C = 2'b10, D = 2'b11;
+	
+	always @ (c, y)
 	begin
-		if(rst) Y = A;
-		else
-			case(y)
-				A: Y = B;
-				B: Y = C;
-				C: Y = D;		
-				D: Y = E;
-				E: Y = E;
-			endcase
-      	on = (y == E);
+		case(c)
+			A:
+              begin
+              	Y = A;
+              	q4 = 0;
+              end
+			B: 
+              begin
+              	Y = B;
+                q0 = 1;
+                q1 = 1;
+                q2 = 1;
+                q3 = 1;
+                q4 = 1;
+              end
+			C: 
+              begin
+              	Y = B;
+                q0 = 0;
+                q1 = 0;
+                q2 = 0;
+                q3 = 0;
+                q4 = 1;
+              end
+			D: 
+              begin
+              	Y = B;
+                q0 = 1;
+                q1 = 0;
+                q2 = 0;
+                q3 = 1;
+                q4 = 1;
+              end
+		endcase
 	end
 	
 	always @ (posedge rst, posedge clk)
 		if(rst) y <= A;
 		else y <= Y;
-	assign state = y;
+	
 endmodule
