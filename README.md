@@ -1,2 +1,2 @@
-# sistemas_digitais
-Projeto desenvolvido durante a disciplina de sistema digitais
+# Sistemas Digitais
+**2019.2 - Profº Emerson Carlos Pedrino**
